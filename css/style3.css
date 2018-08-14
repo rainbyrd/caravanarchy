@@ -5,59 +5,163 @@ body {
 	background-image: url("../img/teal.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-	background-size: 100% 100%
+	/* background-size: 100%; */
 }
-
+p {
+	margin-top: 10px!important;
+	margin-bottom: 10px!important;
+}
+div.a {
+	font-family: 'Merienda';
+	text-align: center;
+	letter-spacing: 2px;
+}
 .img-responsive {
 	height:auto;
 	max-width:100%;
 	width: auto;
 }
+.topnav {
+    background: rgba(255,255,255,0.5);
+    overflow: hidden;
+		width: 60%;
+		margin-left: 20vw;
+		margin-right: 20vw;
 
-
-div.a {
+}
+.topnav a {
+    float: left;
     text-align: center;
+		font-family: 'Allerta Stencil';
+		font-size: 17px;
+		font-weight: bold;
+		width: 14.2857142857%;
+    text-decoration: none;
 }
-
-div.b {
-  text-align: left;
-  padding: 15px;
-  border: 4px double white;
-	font-family: 'Allerta Stencil';
-  background:rgba(255,255,255,0.5);
-	font-size: 1vw;
-	margin-top: 200px;
-  margin-left: 10em;
-	margin-right: 80em;
+.topnav a:hover {
+    background-color: rgba(255,255,255,0.6);
+		color: lightblue;
+		text-decoration: none;
 }
-
-div.c {
-    text-align: right;
+.active {
+    background-color: rgba(0,191,255,0.2);
+    color: white;
 }
-
-div.d {
-    text-align: justify;
+.topnav .icon {
+    display: none;
 }
-
 a:link {
     color: black;
     text-decoration: none;
 }
-
-/* visited link */
 a:visited {
     color: black;
     text-decoration: none;
 }
-
-/* mouse over link */
 a:hover {
     color: lightblue;
     text-decoration: none;
 }
 
-/* selected link */
-a:active {
-    color: blue;
-    text-decoration: none;
+.carousel-indicators {
+		margin-bottom: -15px;
+}
+.content {
+   margin-top: 40px;
+   display: grid;
+	 grid-template-columns: 100px auto auto 100px ;
+ 	 grid-template-rows: auto auto auto;
+	 grid-gap: 10px;
+   justify-content: space-around;
+}
+.container1 {
+	grid-column: 2/4;
+	grid-row: 1/2;
+	overflow: hidden;
+  justify-self: stretch;
+  background-color: rgba(255, 255, 255, 0.8);
+	/* max-width: 400px; */
+}
+.UIinfo {
+	 grid-column: 2/4;
+	 grid-row: 2/3;
+	 background-color: rgba(255, 255, 255, 0.8);
+   /* border: 1px solid rgba(0, 0, 0, 0.8); */
+   padding: 20px;
+   font-size: 1.2vw;
+   text-align: left;
+}
+.UIinfo a {
+		text-align: center;
+}
+#myCarousel {
+		 border: 9px white double;
+}
+
+@media (max-width: 1000px) {
+	.topnav {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.topnav a {
+		font-size: 2vw;
+	}
+}
+@media (max-width: 850px) {
+	.container1 {
+		grid-column: 2/4;
+		grid-row: 2/3;
+		max-width: 600px;
+	}
+	.UIinfo {
+		 grid-column: 2/4;
+		 grid-row: 1/2;
+}
+
+@media (max-width: 600px) {
+	.topnav {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.topnav a {
+		font-size: 17px;
+  	 padding: 10px;
+		 width: 155px;
+	}
+	.topnav a.active {
+	 text-align: left;
+	 padding: 10px;
+	}
+ .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+	  padding: 20px;
+		font-size: 4vw;
+		width: auto;
+  }
+	.topnav.responsive {position: relative;}
+ .topnav.responsive a.icon {
+	 position: absolute;
+	 right: 0;
+	 top: 0;
+	 padding: 20px;
+ }
+ .topnav.responsive a {
+	 float: none;
+	 display: block;
+	 text-align: left;
+	 padding: 10px;
+	 height: 100%;
+ }
+}
+@media (max-width: 500px) {
+	 .content {grid-template-columns: auto;}
+}
+@media print {
+	nav, footer {
+		display: none;
+	}
 }

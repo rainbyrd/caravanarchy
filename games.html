@@ -1,35 +1,97 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-
 <html>
-
 <head>
-<meta charset="utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title> Morgan Rain </title>
-
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="css/style2.css" rel="stylesheet" type="text/css">
-<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
-<script src="js/respond.js"></script>
-<script src="js/script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Morgan Rain </title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style2.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/respond.js"></script>
+  <script src="js/script.js"></script>
 </head>
 
 <body>
-
 <div class="a">
   <a href="index.html"><h1>Morgan Rain</h1></a>
 </div>
-<div class="b">
-  <a href="index.html"><h2>Home</h2></a>
-  <a href="videos.html"><h2>Videos</h2></a>
-  <a href="games.html"><h2>Games</h2></a>
-  <a href="vr.html"><h2>VR</h2></a>
-  <a href="ui.html"><h2>UI/UX</h2></a>
-  <a href="about.html"><h2>About</h2></a>
-  <a href="contact.html"><h2>Contact</h2></a>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html"><p>Home</p></a>
+  <a href="videos.html"><p>Videos</p></a>
+  <a href="games.html" class="active"><p>Games</p></a>
+  <a href="vr.html"><p>VR</p></a>
+  <a href="ui.html"><p>UI/UX</p></a>
+  <a href="about.html"><p>About</p></a>
+  <a href="contact.html"><p>Contact</p></a>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="content">
+  <div class="UIinfo"><a href="#"><h2>Comrades and Cutthroats</h2></a><p>Diplomatic Land Aquisition Board Game</p></div>
+  <div class="container1">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/cards/Dream.png" alt="Page 1 - Generic" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="img/cards/Defectors.png" alt="Page 2 - Rebellious" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="img/cards/Longevity.png" alt="Page 3 - Diplomatic" style="width:100%;">
+        </div>
+          <div class="item">
+            <img src="img/cards/Weaken.png" alt="Page 4 - Militaristic" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="img/cards/Minstrel.png" alt="Page 5 - Encounter" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="img/cards/GoatMeditation.png" alt="Page 6 - Encounter" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="img/cards/MoatPoint.png" alt="Page 7 - Location" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="img/cards/KingsRoad.png" alt="Page 8 - Location" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="img/cards/Ally.png" alt="Page 9 - Generic" style="width:100%;">
+          </div>
+        </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
 </div>
 </body>
+
 </html>
