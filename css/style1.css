@@ -64,10 +64,10 @@ a:hover {
 }
 
 div.content {
-	margin-top: 30px;
+	margin: 30px;
    display: grid | inline-grid;
-	 grid-template-columns: 40px 1fr 1fr 1fr 40px;
- 	 grid-template-rows: 25% 100px auto;
+	 grid-template-columns: 40px auto 40px;
+ 	 grid-template-rows: auto auto auto auto;
 	 grid-gap: 10px 15px;
    justify-items: center;
 	 align-items: center;

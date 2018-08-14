@@ -88,8 +88,8 @@ a:hover {
 	 background-color: rgba(255, 255, 255, 0.8);
    /* border: 1px solid rgba(0, 0, 0, 0.8); */
    padding: 20px;
-   font-size: 1.2vw;
-   text-align: left;
+   font-size: 20px;
+   text-align: Center;
 }
 .UIinfo a {
 		text-align: center;
@@ -111,12 +111,12 @@ a:hover {
 @media (max-width: 850px) {
 	.container1 {
 		grid-column: 2/4;
-		grid-row: 2/3;
+		grid-row: 1/2;
 		max-width: 600px;
 	}
 	.UIinfo {
 		 grid-column: 2/4;
-		 grid-row: 1/2;
+		 grid-row: 2/3;
 }
 
 @media (max-width: 600px) {
