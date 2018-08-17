@@ -4,7 +4,7 @@ body {
 	padding-bottom: 60px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  /* background-size: 100%; */
 }
 
 p {
@@ -71,12 +71,17 @@ div.content {
 	 align-items: center;
    justify-content: space-around;
 }
-
+.words {
+	grid-column: 2/4;
+	text-align: center;
+}
 .bar {
 	display: grid;
 	grid-template-columns: auto auto auto auto auto auto auto;
 	height: auto;
 	width: 100%;
+	position: fixed;
+	bottom: 0;
 	background: rgba(255,255,255,0.5);
 }
 .bar img {
