@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Morgan Rain </title>
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,7 +11,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="css/style1.css" rel="stylesheet" type="text/css">
-  <script src="js/respond.js"></script>
   <script src="js/script.js"></script>
 </head>
 <body>
@@ -30,7 +28,6 @@
   <a href="contact.html"><img class="navv" src="img/icons/email.png">
 </div>
 
-
 <div class="topnav" id="myTopnav">
   <a href="index.html"><p>Home</p></a>
   <a href="videos.html" class="active"><p>Videos</p></a>
@@ -42,15 +39,119 @@
   <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
 </div>
 
+<section>
+<div id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne">
+      <div class="mb-0">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+            <h3>Wanderlust</h3>
+            <p>Sci-fi short film written, directed, edited, and designed by me. I made the costumes as well!</p> </a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+        <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
+      </div>
+    </div>
 
-<div class="content">
-  <div class="video-responsive">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/JyB_Vq8BQmE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="">
+      <div class="card-block">
+        <div class="video-responsive">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JyB_Vq8BQmE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingTwo">
+      <div class="mb-0">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+          <!-- <i class="fa fa-file-text-o" aria-hidden="true"></i> -->
+            <h3>Kelly Porter, Artist Documentary</h3>
+            <p>Filmed, edited, and interviewed by me. Also, dated by me!</p>
+        </a>
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+      <div class="card-block">
+        <div class="video-responsive">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hY2biq-xCCk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="headingThree">
+      <div class="mb-0">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+            <h3>Robot</h3>
+            <p>Sci-fi short with a twist. Written, directed and edited by me. Also, Robot designd by me!</p>
+        </a>
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+      <div class="card-block">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DUr37zleOgA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+   </div>
 </div>
-<div><p> </p></div>
-  <div class="video-responsive">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/hY2biq-xCCk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="card">
+  <div class="card-header" role="tab" id="headingOne">
+    <div class="mb-0">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+          <h3>Capitalism: The Commercial</h3>
+          <p>Stock footage complied by yours truly into a cheeky "commercial".</p>
+      </a>
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </div>
+  </div>
+
+  <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="">
+    <div class="card-block">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ovSAcmmoAsw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
 </div>
+<div class="card">
+  <div class="card-header" role="tab" id="headingTwo">
+    <div class="mb-0">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+          <h3>Major Tom</h3>
+          <p>Music video for the David Bowie song. Back from when I was 17! Storyboarded, directed, and edited by me. I also created the rocket ship!</p>
+        </a>
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+    <div class="card-block">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pNVUIL_MjK0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+  </div>
+</div>
+<!-- <div class="card">
+  <div class="card-header" role="tab" id="headingThree">
+    <div class="mb-0">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+          <h3>Collapsible Group Item</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+      </a>
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+    <div class="card-block">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L5_Vz0CYBqo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  </div>
+</div> -->
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
 </body>
 
 </html>

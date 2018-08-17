@@ -2,12 +2,11 @@ body {
 	font-family: 'Allerta Stencil';
 	letter-spacing: 2px;
 	padding-bottom: 60px;
-	background-image: url("../img/pinkorange.jpg");
-  background-repeat: no-repeat;
+	background-image: url("../img/greens.jpg");
+  background-repeat: repeat;
   background-attachment: fixed;
-	/* background-size: 100%; */
+	background-size: 100%;
 }
-
 p {
 	margin-top: 10px!important;
 	margin-bottom: 10px!important;
@@ -31,27 +30,27 @@ div.a {
 		margin-right: 20vw;
 
 }
-.topnav a {
-    float: left;
-    text-align: center;
-		font-family: 'Allerta Stencil';
-		font-size: 17px;
-		font-weight: bold;
-		width: 14.2857142857%;
-    text-decoration: none;
-}
-.topnav a:hover {
-    background-color: rgba(255,255,255,0.6);
-		color: lightblue;
-		text-decoration: none;
-}
-.active {
-    background-color: rgba(0,191,255,0.2);
-    color: white;
-}
-.topnav .icon {
-    display: none;
-}
+	.topnav a {
+	    float: left;
+	    text-align: center;
+			font-family: 'Allerta Stencil';
+			font-size: 17px;
+			font-weight: bold;
+			width: 14.2857142857%;
+	    text-decoration: none;
+	}
+	.topnav a:hover {
+	    background-color: rgba(255,255,255,0.6);
+			color: lightblue;
+			text-decoration: none;
+	}
+	.active {
+	    background-color: rgba(0,191,255,0.2);
+	    color: white;
+	}
+	.topnav .icon {
+	    display: none;
+	}
 a:link {
     color: black;
     text-decoration: none;
