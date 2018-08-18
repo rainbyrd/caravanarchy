@@ -13,9 +13,14 @@ p {
 	letter-spacing: 0px;
 }
 div.a {
-	font-family: 'Merienda';
-	text-align: center;
-	letter-spacing: 2px;
+	display: grid;
+	grid-template-columns:auto 450px auto;
+}
+div.a img{
+		grid-column: 2/3;
+		width: 100%;
+		padding: 2vw;
+		max-width: 450px;
 }
 .img-responsive {
 	height:auto;
@@ -104,7 +109,9 @@ div.content {
 	padding: 10px;
 }
 
-
+.accordion {
+ max-height: 50%;
+}
 .card {
     -moz-box-direction: normal;
     -moz-box-orient: vertical;
@@ -190,7 +197,9 @@ div.content {
 		display: none;
 	}
 }
-
+@media (max-width:450px) {
+	div.a {display: block;}
+}
 @media print {
 	nav, footer {
 		display: none;
