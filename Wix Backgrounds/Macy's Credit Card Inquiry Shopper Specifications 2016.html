@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Prophet Login</title><SCRIPT LANGUAGE="JavaScript" SRC="/messiah/meta.nsf/GenJSCtrl?OpenPage"></SCRIPT>
+<link rel=stylesheet type="text/css" href="/messiah/meta.nsf/GenStyleCtrl?OpenPage"></head>
+<body text="#000000" bgcolor="#FFFFFF" TOPMARGIN="1" LEFTMARGIN="1" MARGINWIDTH="1" MARGINHEIGHT="1" onload="f = document.forms[0];//if the project is overriding the login screen (e.g. portal use), redirectvar loginScreenOverride = f.jsLoginScreenOverrideURL.value;if (loginScreenOverride != '') {	window.location.href = loginScreenOverride;	return(false);}//Redirect to the login post-processor.  If current RedirectURL contains anything past &quot;.nsf&quot; then add design URL to that plus what was requested.//Only do this if not already set to redirect (e.g. Firefox has a bug with re-populating hidden inputs when 'back' is pressed).var currUrl = (f.RedirectTo.value).toLowerCase();if (currUrl.indexOf(&quot;/loginredirect?readform&quot;) == -1) {	var pos = currUrl.indexOf(&quot;.nsf&quot;);	var newUrl = currUrl.substring(0, pos) + &quot;.nsf/LoginRedirect?ReadForm&amp;RequestedURL=&quot; + String(f.RedirectTo.value).replace(/\//g, &quot;%2F&quot;).replace(/&amp;/g, &quot;%26&quot;);	f.RedirectTo.value = newUrl;}if (f.UIUsername) {	if (f.UIUsername.type != &quot;hidden&quot;) f.UIUsername.focus();}//alert (&quot;This server is having minor technical difficulties that are currently being fixed.\n\nIf you are unable to login please try again in one hour.&quot;);">
+
+<form method="post" action="/names.nsf?Login" name="_MessiahLoginV4toV6">
+<input type="hidden" name="%%ModDate" value="00E2CA2D00000000"><script language="JavaScript" type="text/javascript">
+var jsLangRequested="en-us";
+var jsLangProphetField="en_us";
+var jsShowSideMenu="Show side menu";
+var jsHideSideMenu="Hide side menu";
+var jsShowIcons="Show icons";
+var jsHideIcons="Hide icons";
+var jsNoEntriesSelected="You have no entries selected.";
+var jsCreateCopySingular="You are about to create %num% copy.\n\nIf you are sure you want to do this, click \'OK\'.\nPlease allow a minute for %tmpbrand% to process your request.";
+var jsCreateCopyPlural="You are about to create %num% copies.\n\nIf you are sure you want to do this, click \'OK\'.\nPlease allow a minute for %tmpbrand% to process your request.";
+var jsNoMoreThan25Entries="You may have no more than 50 entries selected.\n\nPlease select fewer entries.";
+var jsChooseAView="Please choose a menu option on the left.";
+var jsVrExpandAll="Expand All";
+var jsVrCollapseAll="Collapse All";
+var jsVrGoTo="Goto";
+var jsVrResetButton="Reset";
+var jsBack="Back";
+var jsVrPrevious="PREVIOUS";
+var jsVr6Previous="Previous";
+var jsVrLoading="Loading...";
+var jsVrNext="NEXT";
+var jsVr6Next="Next";
+var jsVrDisplay="# Rows";
+var jsVrRefresh="Refresh";
+var jsVrItemsSelectedSingular="%num% item selected";
+var jsVrItemsSelectedPlural="%num% items selected";
+var jsVrConflictRecord="(Conflict Record)";
+var jsVrNoRecords="(No Records)";
+var jsVrClickClear="(Click here to clear)";
+var jsVr6ClickClear="Clear";
+var jsVrClickClearConfirm="You are about to clear your selected items.\n\nClick \'OK\' to confirm.";
+var jsValidateNoBlank="You cannot leave this field blank.";
+var jsValidateNumber="Your answer:\n\n%value%\n\nis not a number.\n\nPlease retype your answer as a number, with no letters or other characters.";
+var jsValidateDate="Your answer:\n\n%value%\n\nis not a date. Please enter your answer in the format of:\n\n%tmpSampleFormat%\n\nWhere %tmpFormatExplanation%";
+var jsValidateFormula="Error in Formula%formulaIndex%:\n------------------------------\n%formulaChecked%\n------------------------------\nPlease correct this formula to continue. Additional information has been listed below. Please contact Support for additional assistance.\n\n\nError Details:\n------------------------------\nError: %errorMessage%\nFailure point: %errorText%\nLine: %errorLine%\nCharacter: %errorColumn%\n------------------------------";
+var jsValidateFormulaShort="The formula you have entered is not valid.\n\nError: <strong>%errorMessage%</strong>\nLine: %errorLine%, Column: %errorColumn%\n\nPlease check your formula.";
+var jsValidateFieldName="You must enter a valid Field Name - Format: S_*************";
+var jsValidateGeneralFail="There was a problem with some of your answers.\nPlease review the fields highlighted red and then try again.";
+var jsMustProvideTitle="You must provide a title or click cancel.";
+var jsEnterTitleForItem="Please enter a title for the new item:";
+var jsProblemEncountered="A problem was encountered. Please contact Support.";
+var jsCouldNotCreateEntity="Could not create new entity; contact support.\nReason: %tmpReason%";
+var jsDateDD="DD";
+var jsDateMM="MM";
+var jsDateYYYY="YYYY";
+var jsDateDay="day";
+var jsDateMonth="month";
+var jsDateYear="year";
+var jsValidateTime="Your answer:\n\n%value%\n\nis not a time. Please enter your answer in the format of:\n\n%tmpSampleFormat%\n\nWhere %tmpFormatExplanation%";
+var jsValidateTimeHMS="Your answer:\n\n%value%\n\nis not a time. Please enter your answer in the format of:\n\n%tmpSampleFormat%\n\nWhere %tmpFormatExplanation%";
+var jsTimeHH="HH";
+var jsTimeMM="MM";
+var jsTimeSS="SS";
+var jsTimeXX="XX";
+var jsTimeHour="hour";
+var jsTimeMinute="minute";
+var jsTimeAMorPM="AM or PM";
+var jsValidateEmail="Your answer:\n\n%value%\n\nis not a valid e-mail address. Please retype your answer.";
+var jsValidateLKey="Your answer:\n\n%value%\n\nis not a valid location. Please retype your answer.";
+var jsVisitStatusAvailable="1. Available";
+var jsVisitStatusNotified="2. Notified";
+var jsVisitStatusScheduled="3. Scheduled";
+var jsVisitStatusAccepted="4. Accepted";
+var jsVisitStatusCompleted="5. Completed";
+var jsAlreadyFileNamed="There is already a file named:\n\n%value%\n\nYou must rename your file and re-attach it.";
+var jsDeleteConfirm="WARNING: You are about to delete this!\n\nIf you are sure you want to delete this, click \'OK\'.";
+var jsOverdue="Overdue";
+var jsQueueReportAlert="The selected items have been added to your project\'s \"Priority Runs\" queue and will be processed as soon as possible, in the order submitted.\n\nTo view or cancel this request, go to:\n\nProject Setup --> Forms & Reports --> Reports --> Priority Runs - Pending\n\nImportant Note:\nFor best user experience, please avoid running large reports or making frequent priority requests during peak business hours.";
+var jsVrNoResults="(No Results)";
+var jsNoMoreThan20Entries="You may have no more than 20 entries selected.\n\nPlease select fewer entries.";
+var jsGlobalDependencyListWarning="The highlighted items cannot be deleted because they are in use in other parts of this project.  Edit the highlighted items to see what depends on them.";
+</script> <br>
+<font size="2" color="#ff0000" face="Arial">
+<input name="ProjectLookup" value="" type="hidden"></font><INPUT NAME="jsHelpURL" TYPE=hidden VALUE="/messiah/help.nsf/PubHelpCtrl/General.Login.Login?OpenDocument"> 
+<INPUT NAME="jsLoginScreenOverrideURL" TYPE=hidden VALUE="/mGlobal/mLogin?OpenForm&origLoginReasonType=3&desiredLoginURL=%2FInformaRS%2FCitibankRetailPartner2017%2FControl.nsf%2FIBDefSecondary%2F58FE4F0E7C1FC34085258280005EF296%2F%24File%2FMacy's%2520Credit%2520Card%2520Inquiry%2520Shopper%2520Specifications%25202016.pdf%3FOpenElement"> <div id="mainDivForHidingEntireScreen" style="display: none;"><div align="center">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="314"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td><td width="288"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td></tr>
+
+<tr valign="top"><td width="314"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td><td width="288"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td></tr>
+
+<tr valign="top"><td HEIGHT=170 width="314"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td><td width="288"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td></tr>
+
+<tr valign="top"><td width="314"><div align="center"><img src="/messiah/meta.nsf/LProphet4.0Small.gif?OpenImageResource" width="313" height="56"><br>
+<br>
+</div><br>
+</td><td width="288" valign="middle"><FONT FACE="Arial" SIZE=2><CENTER><font size="1" face="Arial"> </font> <BR></CENTER></FONT><div align="center">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td HEIGHT=10 width="120"><font size="2" face="Arial"> </font></td><td width="120"><font size="2" face="Arial"> </font></td></tr>
+
+<tr valign="top"><td width="240" colspan="2"><noscript><font face="Arial" size="2" color="#ff0000"><b><div align="center"> Your browser must have Javascript enabled to use this site. </div></b></font> <br><br></noscript>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr valign="top"><td width="119"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td><td height=10 width="119"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td></tr>
+
+<tr valign="top"><td width="119" valign="middle"><div align="center"><a onclick="location=&quot;http://www.microsoft.com/windows/ie/default.htm&quot;;return false;" href=""><img src="/messiah/meta.nsf/IMicrosoftIE.gif?OpenImageResource" width="45" height="15" onclick="location=&quot;http://www.microsoft.com/windows/ie/default.htm&quot;;" border="0"></a></div></td><td width="119" valign="middle"><div align="center"><a onclick="location=&quot;http://www.getfirefox.com&quot;;return false;" href=""><img src="/messiah/meta.nsf/IFirefox?OpenImageResource" width="52" height="21" border="0"></a></div></td></tr>
+
+<tr valign="top"><td height=10 width="239" colspan="2"><img width="1" height="1" src="/icons/ecblank.gif" border="0" alt=""></td></tr>
+
+<tr valign="top"><td width="239" colspan="2"><div align="center"><font size="1" face="Arial">Prophet is best experienced with Microsoft Internet Explorer version 6 or higher or Firefox 2.0 or higher. Click the icons above to download either browser.</font></div></td></tr>
+</table>
+</td></tr>
+</table>
+</div></td></tr>
+</table>
+</div><br>
+<font size="2" color="#ff0000" face="Arial">
+<input name="UserName" value="" type=hidden></font><font size="2" color="#ff0000" face="Arial">
+<input name="RedirectTo" value="/InformaRS/CitibankRetailPartner2017/Control.nsf/IBDefSecondary/58FE4F0E7C1FC34085258280005EF296/$File/Macy's%20Credit%20Card%20Inquiry%20Shopper%20Specifications%202016.pdf?OpenElement" type=hidden></font><!--
+<input type="submit" value="Dummy button so Domino thinks that old browsers are getting a button and doesn't try to render its own">-->
+
+
+</div>
+</form>
+</body>
+</html>
