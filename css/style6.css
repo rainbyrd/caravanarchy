@@ -113,12 +113,17 @@ a:hover {
    font-size: 20px;
    text-align: left;
 }
+.email {
+	grid-column: 3/4;
+	text-align: center;
+}
 .UIinfo a {
 		text-align: center;
 }
-#myCarousel {
+.UIinfo img{
+	max-width: 100%;
+	border: 9px white double;
 }
-
 @media (max-width: 1000px) {
 	.topnav {
 		width: 100%;
