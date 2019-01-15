@@ -110,7 +110,6 @@ a:hover {
 	grid-row: 1/2;
 	overflow: hidden;
   justify-self: stretch;
-  background-color: rgba(255, 255, 255, 0.8);
 	max-width: 400px;
 }
 .UIinfo {
@@ -126,6 +125,7 @@ a:hover {
 		text-align: center;
 }
 #myCarousel {
+
 }
 
 @media (max-width: 1000px) {
