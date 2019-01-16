@@ -89,10 +89,6 @@ a:hover {
     color: lightblue;
     text-decoration: none;
 }
-
-.carousel-indicators {
-		margin-bottom: -15px;
-}
 .content {
    margin-top: 40px;
    display: grid;
@@ -106,7 +102,7 @@ a:hover {
 	grid-row: 1/2;
 	overflow: hidden;
   justify-self: stretch;
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.8); */
 	/* max-width: 400px; */
 }
 .maya {
@@ -133,10 +129,28 @@ a:hover {
 .maya1 a {
 		text-align: center;
 }
-#myCarousel {
-		 border: 9px white double;
-}
 
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+		margin: 5px;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.sketchfab-embed-wrapper {
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+	margin: 5px;
+}
 @media (max-width: 1000px) {
 	.topnav {
 		width: 100%;
@@ -153,14 +167,19 @@ a:hover {
 		grid-row: 1/2;
 		max-width: 600px;
 	}
-	.UIinfo {
+	.maya {
 		 grid-column: 2/4;
 		 grid-row: 2/3;
-} }
+}
+}
 @media (min-width: 600px) {
 	.bar {
 		display: none;
 	}
+	.maya {
+		 grid-column: 2/3;
+		 grid-row: 2/3;
+	 }
 }
 @media (max-width: 600px) {
 	.topnav {
