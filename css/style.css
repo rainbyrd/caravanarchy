@@ -11,6 +11,12 @@ p {
 	margin-top: 10px!important;
 	margin-bottom: 10px!important;
 }
+.border img{
+ 	position: absolute;
+	top: 0px;
+	right: 0px;
+	max-width: 100%;
+}
 div.a {
 	display: grid;
 	grid-template-columns:auto 450px auto;

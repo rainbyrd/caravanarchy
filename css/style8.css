@@ -170,7 +170,17 @@ a:hover {
     width: 100%;
     height: 100%;
 	}
-
+@media (min-width: 1250px) {
+	div.a {
+			height: 200px;
+			grid-template-columns:auto 650px auto;
+	}
+	div.a img {
+		max-width: 650px;
+		padding: 2vw;
+		width: 650px;
+	}
+}
 @media (max-width: 1000px) {
 	.topnav {
 		width: 100%;
@@ -191,6 +201,11 @@ a:hover {
 		 grid-column: 2/4;
 		 grid-row: 2/3;
 }
+}
+@media (max-width: 755px) {
+	.content {
+		grid-template-columns: 50px auto auto 50px ;
+	}
 }
 @media (min-width: 600px) {
 	.bar {

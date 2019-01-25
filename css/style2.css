@@ -125,6 +125,70 @@ a:hover {
 #myCarousel {
 }
 
+.UIinfo1 {
+	 grid-column: 2/4;
+	 grid-row: 2/3;
+	 background-color: rgba(255, 255, 255, 0.8);
+   /* border: 1px solid rgba(0, 0, 0, 0.8); */
+   padding: 20px;
+   font-size: 20px;
+   text-align: left;
+	 display: grid;
+}
+.UIinfo1 p {
+  color: #ffffff;
+}
+.UIinfo1 a {
+    color: hotpink;
+}
+.UIinfo1 a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+.UIinfo1 h2 {
+  font-weight: 700;
+  color: #042029;
+  font-size: 1.75em;
+  margin-bottom: .4em;
+}
+.spantxt {
+  border: 2px black;
+}
+
+.hr {
+	grid-column: 1/5;
+	grid-row: 1/2;
+}
+select {
+		grid-column: 1/3;
+		grid-row: 2/3;
+    margin-bottom: 20px;
+}
+.info {
+	grid-column: 1/5;
+	grid-row: 3/4;
+	display: grid;
+}
+.words {
+	grid-column: 1/2;
+	grid-row: 1/2;
+  padding: 15px;
+  background: #475B62;
+  border: inset #35484f 5px;
+  line-height: 3.5vw;
+	height: 550px;
+	max-width: 25vw;
+}
+#chart {
+	grid-column: 2/5;
+	grid-row: 1/2;
+	margin-top:10px;
+	max-width: 830px;
+	width: 100%;
+	height: 100%;
+	max-height: 550px;
+}
+
 @media (max-width: 1000px) {
 	.topnav {
 		width: 100%;
@@ -133,6 +197,29 @@ a:hover {
 	}
 	.topnav a {
 		font-size: 2vw;
+	}
+	.info {
+		grid-column: 1/5;
+		grid-row: 3/4;
+		display: grid;
+	}
+	.words {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	  padding: 15px;
+	  background: #475B62;
+	  border: inset #35484f 5px;
+	  line-height: 3.5vw;
+		height: 100%;
+		max-width: 100%;
+	}
+	#chart {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		margin-top:0px;
+		max-width: 830px;
+		width: 100%;
+		height: 550px;
 	}
 }
 @media (max-width: 850px) {
@@ -144,7 +231,15 @@ a:hover {
 	.UIinfo {
 		 grid-column: 2/4;
 		 grid-row: 1/2;
-} }
+	}
+	.UIinfo1 {
+		 grid-column: 2/4;
+		 grid-row: 3/4;
+	}
+	.words {
+		line-height: normal;
+	}
+}
 @media (min-width: 600px) {
 	.bar {
 		display: none;
