@@ -20,13 +20,20 @@ h3 {
 }
 div.a {
 	display: grid;
-	grid-template-columns:auto 450px auto;
+	grid-template-columns:20vw 60vw 20vw;
+}
+div.a a{
+	grid-column: 2/3;
 }
 div.a img{
-		grid-column: 2/3;
-		width: 100%;
+		max-width: 100%;
 		padding: 2vw;
-		max-width: 450px;
+}
+.footer {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: .8em;
 }
 .bar {
 	display: grid;

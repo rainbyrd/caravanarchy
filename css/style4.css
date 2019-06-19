@@ -13,13 +13,14 @@ p {
 }
 div.a {
 	display: grid;
-	grid-template-columns:auto 450px auto;
+	grid-template-columns:20vw 60vw 20vw;
+}
+div.a a{
+	grid-column: 2/3;
 }
 div.a img{
-		grid-column: 2/3;
-		width: 100%;
+		max-width: 100%;
 		padding: 2vw;
-		max-width: 450px;
 }
 .bar {
 	display: grid;
@@ -127,7 +128,15 @@ a:hover {
 #myCarousel {
 
 }
-
+.footer {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	font-size: .8em;
+	color: black;
+	background: white;
+  padding: 2px;
+}
 @media (max-width: 1000px) {
 	.topnav {
 		width: 100%;
