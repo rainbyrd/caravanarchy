@@ -52,13 +52,14 @@ p {
 }
 div.a {
 	display: grid;
-	grid-template-columns:auto 450px auto;
+	grid-template-columns:20vw 60vw 20vw;
+}
+div.a a{
+	grid-column: 2/3;
 }
 div.a img{
-		grid-column: 2/3;
-		width: 100%;
+		max-width: 100%;
 		padding: 2vw;
-		max-width: 450px;
 }
 .bar {
 	display: grid;
@@ -133,6 +134,17 @@ div.content {
 .words {
 	grid-column: 2/4;
 	text-align: center;
+}
+@media (min-width: 1250px){
+	div.a {
+			height: 200px;
+			grid-template-columns:auto 650px auto;
+	}
+	div.a img {
+		max-width: 650px;
+		padding: 2vw;
+		width: 650px;
+	}
 }
 @media (max-width: 1000px) {
 	.topnav {

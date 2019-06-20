@@ -145,7 +145,17 @@ a:hover {
 #myCarousel {
 		 border: 9px white double;
 }
-
+@media (min-width: 1250px){
+	div.a {
+			height: 200px;
+			grid-template-columns:auto 650px auto;
+	}
+	div.a img {
+		max-width: 650px;
+		padding: 2vw;
+		width: 650px;
+	}
+}
 @media (max-width: 1000px) {
 	.topnav {
 		width: 100%;

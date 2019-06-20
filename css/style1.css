@@ -181,12 +181,18 @@ div.content {
     border-top:1px soild #000;
     border-radius:0;
 }
-/* i {
-	position: fixed;
-	right: 0;
-	margin: 10px;
-} */
 
+@media (min-width: 1250px){
+	div.a {
+			height: 200px;
+			grid-template-columns:auto 650px auto;
+	}
+	div.a img {
+		max-width: 650px;
+		padding: 2vw;
+		width: 650px;
+	}
+}
 @media (max-width: 1000px) {
 	.topnav {
 		width: 100%;
