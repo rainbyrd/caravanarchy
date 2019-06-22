@@ -24,7 +24,62 @@ url("css/fonts/Harabara.otf") format("opentype"),
 url("css/fonts/Harabara.svg#filename") format("svg");
 }
 */
+#mask {
+    width: 280px;
+    height: 280px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/Harry-Potter-1-.jpg) center center;
+  background-size: cover;
+	background-position: fixed;
+  transition: 0.4s cubic-bezier(1, -1, 0, 2);
+  clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+}
+#mask:hover {
+  clip-path: polygon(50% 19%, 0 76%, 100% 76%);
+}
 
+#mask-links ul {
+        list-style-type: none;
+        width: 240px;
+        padding: 0;
+}
+
+#mask-links li {
+        border: 1px dotted #999;
+        border-width: 1px 0;
+        padding: 15px 0;
+        margin: 0;
+}
+
+#mask-links {
+  width: 255px;
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-clip-path: polygon(0 0, 20px 20px, 40px 0, 60px 20px, 80px 0, 100px 20px, 120px 0, 140px 20px, 160px 0, 180px 20px, 200px 0, 220px 20px, 240px 0, 255px 0, 255px 300px, 240px 300px, 220px 280px, 200px 300px, 180px 280px, 160px 300px, 140px 280px, 120px 300px, 100px 280px, 80px 300px, 60px 280px, 40px 300px, 20px 280px, 0 300px);
+  clip-path: polygon(0 0, 20px 20px, 40px 0, 60px 20px, 80px 0, 100px 20px, 120px 0, 140px 20px, 160px 0, 180px 20px, 200px 0, 220px 20px, 240px 0, 255px 0, 255px 300px, 240px 300px, 220px 280px, 200px 300px, 180px 280px, 160px 300px, 140px 280px, 120px 300px, 100px 280px, 80px 300px, 60px 280px, 40px 300px, 20px 280px, 0 300px);
+}
+
+#mask-links li:nth-child(even) {
+  background: #CCC
+}
+
+#mask-links li:nth-child(odd) {
+  background: #AAA
+}
+
+#mask-links > ul:first-child {
+  margin-top: 20px;
+}
+
+#mask-links > ul:last-child {
+  margin-bottom: 20px;
+}
+#mask1 img{
+	left: -800px;
+	top: -500px;
+	position: fixed;
+	z-index: 3;
+}
 body {
 	background-image: url("../img/lightblue.jpg");
 	letter-spacing: 2px;
@@ -32,13 +87,40 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 	background-position: center;
-  /* background-size: 100%; */
+  background-size: 100%;
+}
+.image {
+	display:grid;
+	grid-template-columns:40vw 20vw 40vw;
+	grid-template-rows: 150px 160px auto;
+}
+.image img{
+	grid-column: 1/2;
+	grid-row: 2;
+	max-width: 450px;
+	width: 30vw;
+	margin-top: -25%;
+	padding-left: 10vw;
+	padding-top: 5vw;
 }
 .footer {
-	position: absolute;
+	position: fixed;
 	bottom: 10px;
 	right: 10px;
 	font-size: .8em;
+}
+.words {
+	grid-column: 2/4;
+	text-align: center;
+	/* position: fixed;
+	left: 50%;
+  top:  43%;
+  margin-left: -97.3px;
+  margin-top:  -80px; */
+	/* font-size: .8em;
+	color: black;
+	background: white;
+	padding: 2px; */
 }
 p {
 	margin-top: 10px!important;
@@ -69,6 +151,7 @@ div.a img{
 	position: fixed;
 	bottom: 0;
 	background: rgba(255,255,255,0.5);
+	z-index: 4;
 }
 .bar img {
 	height:auto;
@@ -131,10 +214,7 @@ div.content {
 	 align-items: center;
    justify-content: space-around;
 }
-.words {
-	grid-column: 2/4;
-	text-align: center;
-}
+
 @media (min-width: 1250px){
 	div.a {
 			height: 200px;
@@ -155,6 +235,46 @@ div.content {
 	.topnav a {
 		font-size: 2vw;
 	}
+	.words {
+		left: 50%;
+		top: 300px;
+		grid-column: 2/4;
+		text-align: center;
+		position: fixed;
+}
+.image {
+	display:grid;
+	grid-template-columns:30vw 40vw 30vw;
+	grid-template-rows: 460px auto auto;
+}
+.image img{
+	grid-column: 2/3;
+	grid-row: 2;
+	max-width: 450px;
+	width: 40vw;
+	padding: 3vw;
+	display: block;
+  margin: 0 auto;
+}
+}
+@media (max-width: 700px) {
+.image {
+	display:grid;
+	grid-template-columns:15vw 70vw 15vw;
+	grid-template-rows: 200px auto auto;
+}
+.image img{
+	grid-column: 1/4;
+	grid-row: 2;
+	max-width: 450px;
+	padding: 3vw;
+	width: 70vw;
+	display: block;
+	margin: 0 auto;
+}
+.words {
+margin-top: -110px;
+}
 }
 @media (min-width: 600px) {
 	.bar {
@@ -165,9 +285,17 @@ div.content {
 	.topnav {
 		display: none;
 	}
+	.words {
+		left: 50%;
+		top: 200px;
+		grid-column: 2/4;
+		text-align: center;
+		position: fixed;
+}
 }
 @media (max-width:450px) {
 	div.a {display: block;}
+
 }
 @media print {
 	nav, footer {

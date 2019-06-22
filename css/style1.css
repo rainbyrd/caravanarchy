@@ -21,6 +21,15 @@ p {
 	background: white;
 	padding: 2px;
 }
+.storyboard  {
+    background:  rgba(255,255,255,0.6);
+		margin: 20px 12.5px;
+}
+.storyboard img{
+	max-width: 100%;
+	width: 100%;
+	padding: 10px;
+}
 div.a {
 	display: grid;
 	grid-template-columns:20vw 60vw 20vw;
