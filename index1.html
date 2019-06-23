@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Morgan</title>
+    <LINK REL=StyleSheet HREF="./assets/css/style7.css" TYPE="text/css" MEDIA=screen>
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+</head>
+  <body>
+    <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Navigate</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="index7.html">Home</a>
+        <a href="index6.html">About</a>
+        <a href="index3.html">Spiral</a>
+        <a href="index5.html">Grid</a>
+        <a href="index1.html">Vanilla CSS</a>
+        <a href="index2.html">Sketches</a>
+      </div>
+    </div>
+    <h1> Vanilla CSS </h1><br><br>
+    <p> body {<br>
+      background:url("../img/ice.jpg") fixed no-repeat;<br>
+      background-size: cover;<br>
+      }<br>
+<br>
+      .wrapper{<br>
+        display:grid;<br>
+        grid-template-columns: 10em 10em auto 10em 10em;<br>
+        grid-auto-rows:minmax(100px, auto);<br>
+        grid-gap:1em;<br>
+        justify-items:stretch;<br>
+        align-items:stretch;<br>
+      }<br>
+      .wrapper > div{<br>
+        padding:0em;<br>
+      }<br>
+<br>
+      /* large baby picture */<br>
+      .header {<br>
+        grid-column: 3;<br>
+        grid-row: 1/7;<br>
+      }<br>
+      .header img{<br>
+          width: 100%;<br>
+      }<br>
+<br>
+      /* hexagram images */<br>
+      .box{<br>
+        width: 10em;<br>
+        overflow: hidden;<br>
+      }<br>
+      .box img{<br>
+        max-width: 100%;<br>
+      }<br>
+      .box:hover img{<br>
+        margin-top:-220px;<br>
+        display:block;<br>
+        position: absolute;<br>
+        top: 12vw;<br>
+        left: 24vw;<br>
+        height: 96vh;<br>
+        -webkit-transition: margin 1s;<br>
+        -moz-transition: margin 1s;<br>
+        transition: margin 1s;<br>
+      }<br>
+<br>
+      /* paragraph text styling...to be invisible until hovered over */<br>
+      .box p {<br>
+        font: 30px courier;<br>
+        font-weight: bold;<br>
+        color: orange;<br>
+        display: none;<br>
+        text-shadow: 2px 2px 5px #888;<br>
+        align-items: center;<br>
+      }<br>
+      .box:hover p {<br>
+        display: inline;<br>
+      }<br>
+<br>
+    /* screen resizing... not too happy with results, choppy. */<br>
+<br>
+    @media (max-width: 1440px) {<br>
+    .header {<br>
+      grid-column: 2;<br>
+    }<br>
+    .wrapper {<br>
+      grid-template-columns: 10em auto 10em;<br>
+    }<br>
+    }<br>
+<br>
+    @media (max-width: 1089px) {<br>
+    .wrapper {<br>
+      grid-template-columns: auto;<br>
+    }<br>
+    .box:hover img{<br>
+    margin-top:-220px;<br>
+    display:block;<br>
+    position: absolute;<br>
+    top: 15em;<br>
+    left: 10vw;<br>
+    width: 80vh;<br>
+    -webkit-transition: margin 1s;<br>
+    -moz-transition: margin 1s;<br>
+    transition: margin 1s; }<br>
+<br>
+    }<br>
+    @media (max-width: 900px) {<br>
+    .header {<br>
+      grid-column: 1/5;<br>
+      grid-row: 1;<br>
+    }<br>
+    .wrapper {<br>
+      grid-template-columns: 10em 10em 10em 10em;<br>
+    }<br>
+    }<br>
+    @media (max-width: 855px) {<br>
+    .header img {<br>
+      min-height: 10px;<br>
+      min-width: 10px;<br>
+      width: 100vw;<br>
+    }<br>
+    }<br>
+    @media (max-width: 547px) {<br>
+    .header {<br>
+      grid-column: 1/4;<br>
+    }<br>
+    .wrapper {<br>
+      grid-template-columns: 10em 10em 10em;<br>
+    }<br>
+    }<br>
+<br>
+/* dropdown */<br>
+    .dropbtn {<br>
+        background-color: #3498DB;<br>
+        color: white;<br>
+        padding: 16px;<br>
+        font-size: 16px;<br>
+        border: none;<br>
+        cursor: pointer;<br>
+    }<br>
+<br>
+    .dropbtn:hover, .dropbtn:focus {<br>
+        background-color: #2980B9;<br>
+    }<br>
+<br>
+    .dropdown {<br>
+        position: relative;<br>
+    }<br>
+    .dropdown-content {<br>
+        display: none;<br>
+        position: absolute;<br>
+        background-color: #f1f1f1;<br>
+        min-width: 160px;<br>
+        overflow: auto;<br>
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);<br>
+        z-index: 1;<br>
+    }<br>
+<br>
+    .dropdown-content a {<br>
+        color: black;<br>
+        padding: 12px 16px;<br>
+        text-decoration: none;<br>
+        display: block;<br>
+    }<br>
+<br>
+    .dropdown a:hover {background-color: #ddd}<br>
+<br>
+    .show {display:block;}<br>
+</p><br>
+</body>
