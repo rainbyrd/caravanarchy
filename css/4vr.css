@@ -1,6 +1,6 @@
 body {
 	font-family: 'Anaheim';
-	letter-spacing: 2px;
+	letter-spacing: 0px;
 	padding-bottom: 60px;
 	background-image: url("../img/teal.jpg");
   background-repeat: no-repeat;
@@ -11,6 +11,7 @@ p {
 	margin-top: 10px!important;
 	margin-bottom: 10px!important;
 	letter-spacing: 0px;
+	font-size: 14px;
 }
 h3 {
 	margin-top: 10px!important;

@@ -100,7 +100,7 @@ body {
 .words p {
 	margin-top: 10px!important;
 	margin-bottom: 10px!important;
-  font-size: 1.2vw;
+  font-size: 14px;
 }
 .border img{
  	position: absolute;
@@ -249,7 +249,7 @@ div.content {
 	margin: 0 auto;
 }
 .words {
-margin-top: -110px;
+/* margin-top: -110px; */
 }
 }
 @media (min-width: 600px) {
