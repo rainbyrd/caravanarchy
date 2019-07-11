@@ -180,18 +180,6 @@ a:hover {
 	.bar {
 		display: none;
 	}
-	.UIinfo {
-			font-size: 14px;
-	}
-	.UIinfo1 {
-			font-size: 14px;
-	}
-	.UIinfo h1{
-			font-size: 14px;
-	}
-	.UIinfo1 h1{
-			font-size: 14px;
-	}
 }
 @media (max-width: 600px) {
 	.topnav {
@@ -199,6 +187,18 @@ a:hover {
 	}
 	.content {
 		margin-top: 0px;
+	}
+	.UIinfo {
+			font-size: 15px;
+	}
+	.UIinfo1 {
+			font-size: 15px;
+	}
+	.UIinfo h1{
+			font-size: 15px;
+	}
+	.UIinfo1 h1{
+			font-size: 15px;
 	}
 }
 @media (max-width: 500px) {
