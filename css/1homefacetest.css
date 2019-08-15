@@ -185,7 +185,7 @@ a:hover {
 }
 @media (max-width: 600px) {
   body {
-      background-size: 100%;
+    background-size: cover;
   	background-position: 0px 0px;
   }
 	.topnav {
