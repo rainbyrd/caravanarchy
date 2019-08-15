@@ -197,13 +197,16 @@ a:hover {
 	.words {
     margin-top: 0px;
     width: 80vw;
+    grid-column: 1;
 }
   .words2 {
     margin-top: 0px;
     width: 80vw;
+    grid-column: 3;
   }
   .words3 {
     margin-top: 0px;
+    left: 100px;
     width: 80vw;
   }
 }
