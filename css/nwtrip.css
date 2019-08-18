@@ -28,6 +28,8 @@ h3 {
 }
 img {
 		max-width: 100%;
+		max-height: 100%;
+		  object-fit: contain;
 }
 div.a {
 	display: grid;
@@ -48,6 +50,9 @@ li {
   font-family: 'Beth Ellen', cursive;
 	font-size: 2vw;
 	margin-bottom: 15px;
+}
+.myCarousel {
+	max-height: 100%;
 }
 .footer {
 	position: fixed;
