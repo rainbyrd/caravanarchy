@@ -101,32 +101,60 @@ a:hover {
 	 /* background-color: rgba(255, 255, 255, 0.7); */
    margin-top: 40px;
    display: grid;
-	 grid-template-columns: 100px auto auto 100px ;
+	 grid-template-columns: 100px auto 420px 100px ;
  	 grid-template-rows: auto auto auto;
 	 grid-gap: 10px;
    justify-content: space-around;
 }
 .container1 {
 	grid-column: 3/4;
-	grid-row: 1/2;
+	grid-row: 1;
 	overflow: hidden;
-  justify-self: stretch;
-	max-width: 400px;
+  justify-self: right;
+		align-self: center;
+	max-width: 420px;
+	padding: 10px 10px 1px 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.container2 {
+	grid-column: 3/4;
+	grid-row: 2;
+	overflow: hidden;
+	justify-self: right;
+	align-self: center;
+	max-width: 420px;
+	padding: 10px 10px 1px 10px;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 .UIinfo {
 	 grid-column: 2/3;
-	 grid-row: 1/2;
+	 grid-row: 1;
 	 background-color: rgba(255, 255, 255, 0.8);
-   /* border: 1px solid rgba(0, 0, 0, 0.8); */
    padding: 20px;
    font-size: 20px;
    text-align: left;
+ 	 overflow: auto;
+	 max-height: 730px;
 }
 .UIinfo a {
 		text-align: center;
 }
-#myCarousel {
-
+.UIinfo1 {
+	 grid-column: 2/3;
+	 grid-row: 2;
+	 background-color: rgba(255, 255, 255, 0.8);
+   padding: 20px;
+   font-size: 20px;
+   text-align: left;
+	 overflow: auto;
+	 max-height: 640px;
+}
+.UIinfo1 h1 {
+		text-align: center;
+}
+#myCarousel1 img {
+	width: 400px;
+	height:auto;
 }
 .footer {
 	position: fixed;
@@ -161,12 +189,21 @@ a:hover {
 @media (max-width: 850px) {
 	.container1 {
 		grid-column: 2/4;
-		grid-row: 2/3;
+		grid-row: 2;
 		max-width: 600px;
 	}
 	.UIinfo {
 		 grid-column: 2/4;
-		 grid-row: 1/2;
+		 grid-row: 1;
+}
+.container2 {
+	grid-column: 2/4;
+	grid-row: 4;
+	max-width: 600px;
+}
+.UIinfo1 {
+	 grid-column: 2/4;
+	 grid-row: 3;
 }
 }
 @media (min-width: 600px) {
