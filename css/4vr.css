@@ -155,6 +155,18 @@ a:hover {
 .UIinfo2 a {
 		text-align: center;
 }
+.UIinfo3 {
+	 grid-column: 2/4;
+	 grid-row: 5;
+	 background-color: rgba(255, 255, 255, 0.8);
+   /* border: 1px solid rgba(0, 0, 0, 0.8); */
+   padding: 20px;
+   font-size: 20px;
+   text-align: Center;
+}
+.UIinfo3 a {
+		text-align: center;
+}
 #myCarousel {
 		 border: 9px white double;
 }
