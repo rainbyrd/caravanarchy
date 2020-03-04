@@ -142,7 +142,30 @@ a:hover {
 .maya1 a {
 		text-align: center;
 }
-
+.maya2 {
+	 grid-column: 2/4;
+	 grid-row: 6/7;
+	 background-color: rgba(255, 255, 255, 0.8);
+   /* border: 1px solid rgba(0, 0, 0, 0.8); */
+   padding: 20px;
+   font-size: 20px;
+   text-align: Center;
+}
+.maya2 a {
+		text-align: center;
+}
+.maya3 {
+	 grid-column: 2/4;
+	 grid-row: 6/7;
+	 background-color: rgba(255, 255, 255, 0.8);
+   /* border: 1px solid rgba(0, 0, 0, 0.8); */
+   padding: 20px;
+   font-size: 20px;
+   text-align: Center;
+}
+.maya3 a {
+		text-align: center;
+}
 .video-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
