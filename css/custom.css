@@ -126,10 +126,12 @@ h3 {
 	color: black;
   font-family: 'Roboto Mono';
 }
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
 }
+
 .a {
 	max-width: 100%;
 	background: #9EF01A;
@@ -140,6 +142,12 @@ h3 {
 	box-shadow: 0 0 0 1px black;
 }
 
+.aa {
+	position: static;
+	background: rgba(255, 255, 255, 0.2);
+	outline: 4px white;
+}
+
 .texts {
 	background: rgba(0, 0, 0, 0.7);
 	margin: 3vw;
@@ -147,6 +155,8 @@ h3 {
 	border-radius: 1px;
 	box-shadow: 0 0 0 1px black;
 	padding: 3vh;
+  display: flex;
+	flex-wrap: wrap;
 }
 
 .text2 {
@@ -156,7 +166,11 @@ h3 {
 	outline: 3px double lime;
 	border-radius: 5px;
 	box-shadow: 0 0 0 1px black;
+	/* display: inline-block; */
+	/* vertical-align: middle; */
+	flex: 1;
 }
+
 .listtext {
 	background: rgba(255, 255, 255, 0.05);
 	padding: 30px;
@@ -165,14 +179,13 @@ h3 {
 
 @media (min-width: 2494px) {
 	div.a {
-			height: 200px;
-			grid-template-columns:auto 650px auto;
+		height: 200px;
+		grid-template-columns:auto 650px auto;
 	}
 	div.a img {
 		max-width: 100%;
 		padding: 2vw;
 		width: 650px;
-
 	}
 }
 

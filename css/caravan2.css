@@ -91,6 +91,7 @@ h3 {
 	outline: 6px double lime;
 	border-radius: 1px;
 	box-shadow: 0 0 0 1px black;
+  max-width: 45vw;
 }
 
 .text2 {
@@ -106,7 +107,13 @@ h3 {
 	padding: 30px;
 	outline: 1px black;
 }
-
+.child {
+  background-color: black;
+}
+.child img{
+  margin-: 1vw;
+  max-width: 48vw;
+}
 @media (min-width: 2494px) {
 	div.a {
 			height: 200px;
@@ -116,8 +123,25 @@ h3 {
 		max-width: 100%;
 		padding: 2vw;
 		width: 650px;
-
 	}
+}
+
+@media (min-width: 1300px) {
+	p {
+		font-size: 1.5vw;
+	}
+	h3 {
+		font-size: 3vw;
+	}
+	h2 {
+			font-size: 4vw;
+		}
+}
+
+@media (max-width: 700px) {
+.child img{
+  max-width: 92vw;
+}
 }
 
 /*
