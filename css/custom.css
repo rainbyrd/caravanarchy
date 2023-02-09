@@ -56,11 +56,11 @@ body {
  letter-spacing: 2px;
  padding-bottom: 60px;
  background-color: rgba(0, 0, 0, 0.9);
- background-image: url("../img/caravanarchy/map2.png");
+ background-image: url("../img/caravanarchy/mapardark.png");
  min-height: 2345px;
  background-repeat: no-repeat;
  background-attachment: fixed;
- background-size: 100%;
+ background-size: cover;
  /* line-height: 1.7em; */
  color: #7f8c8d;
  font-size: 13px;
@@ -100,12 +100,13 @@ p {
 h1 {
 	font-size: 7vw;
   padding: 15px;
-	color: black;
+	/* color: black; */
+	color: white;
   font-family: 'Righteous';
 	margin: 15px;
 	text-shadow: 2px 4px 4px rgba(37, 218, 0,0.6);
-  -webkit-text-stroke: 2px white;
-	background-color: #CCFF33;
+  -webkit-text-stroke: 4px black;
+	background-color: rgb(204, 255, 51, 0.0);
 }
 h2 {
 	padding: 15px;
@@ -129,7 +130,10 @@ h3 {
   font-family: 'Roboto Mono';
 	margin-top: 10px;
 }
-
+a {
+	/* max-height: 5vh; */
+  color: white;
+}
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -138,6 +142,8 @@ h3 {
 .a {
 	max-width: 100%;
 	background: rgb(158, 240, 26, 0.7);
+	background-image: url("../img/caravanarchy/rectgreen.png");
+	background-size: contain;
 	margin: 10px;
 	padding: 10px;
 	outline: 6px double white;
@@ -218,6 +224,9 @@ h3 {
 	.text2 {
 		margin:2vw;
 		padding: 2vw;
+	}
+	h1{
+		  -webkit-text-stroke: 2px black;
 	}
 }
 
