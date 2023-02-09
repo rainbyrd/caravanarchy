@@ -176,12 +176,30 @@ h3 {
 	}
 }
 
+@media (min-width: 1300px) {
+	p {
+		font-size: 1.5vw;
+	}
+	h3 {
+		font-size: 3vw;
+	}
+	h2 {
+			font-size: 4vw;
+		}
+}
+
 @media (max-width: 800px) {
 	body{
 		background-size: 800px;
 	}
 	.parallax__layer--deep {
 		display: block;
+	}
+	.texts {
+		margin:2vw;
+	}
+	.text2 {
+		margin:2vw;
 	}
 }
 
