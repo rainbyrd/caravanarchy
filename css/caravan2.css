@@ -13,13 +13,21 @@
  	letter-spacing: 2px;
  	padding-bottom: 60px;
 	background-color: rgba(0, 0, 0, 0.9);
- 	background-image: url("../img/caravanarchy/mapargreen.png");
+ 	background-image: url("../img/caravanarchy/map2.png");
+	min-height: 2345px;
   background-repeat: no-repeat;
   background-attachment: fixed;
- 	background-size: cover;
+ 	background-size: 100%;
   line-height: 1.7em;
   color: #7f8c8d;
   font-size: 13px;
+}
+
+img {
+	max-width: 100%;
+	max-height: auto;
+	object-fit: contain;
+	/* min-width: 100%; */
 }
 
 p {
@@ -66,7 +74,7 @@ h3 {
     max-width: 100%;
     height: auto;
 }
-div.a {
+.a {
 	max-width: 100%;
 	background: #9EF01A;
 	margin: 10px;
@@ -79,7 +87,7 @@ div.a {
 	background: #9EF01A; */
 .texts {
 	background: rgba(0, 0, 0, 0.7);
-	margin: 30px;
+	margin: 3vw;
 	outline: 6px double lime;
 	border-radius: 1px;
 	box-shadow: 0 0 0 1px black;
@@ -98,3 +106,41 @@ div.a {
 	padding: 30px;
 	outline: 1px black;
 }
+
+@media (min-width: 2494px) {
+	div.a {
+			height: 200px;
+			grid-template-columns:auto 650px auto;
+	}
+	div.a img {
+		max-width: 100%;
+		padding: 2vw;
+		width: 650px;
+
+	}
+}
+
+/*
+textarea
+
+footer {
+	padding: 2em;
+	margin: 3em 0;
+	border-top: 1px solid black ;
+	color: ;
+	text-align: center;
+
+	div {
+		margin: 0 auto;
+		}
+
+	.img-responsive {
+			height:auto;
+			max-width:100%;
+			width: auto;
+		}
+
+
+
+
+	} */
