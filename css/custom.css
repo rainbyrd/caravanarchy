@@ -181,7 +181,7 @@ h3 {
 		background-size: 800px;
 	}
 	.parallax__layer--deep {
-		display: none;
+		display: block;
 	}
 }
 
