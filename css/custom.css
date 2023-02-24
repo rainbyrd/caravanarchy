@@ -153,9 +153,14 @@ a {
 }
 
 .aa {
-	position: static;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-image: url("../img/caravanarchy/rectgreentransparent.png");
 	background: rgba(255, 255, 255, 0.2);
 	outline: 4px white;
+	margin: 3vw;
+	padding: 1vw;
 }
 
 .texts {
@@ -186,6 +191,10 @@ a {
 	padding: 30px;
 	outline: 1px black;
 }
+
+
+
+
 
 .tree{
   --spacing : 1.5rem;

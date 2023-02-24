@@ -83,6 +83,24 @@ h3 {
 	border-radius: 5px;
 	box-shadow: 0 0 0 1px black;
 }
+
+.aa {
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-image: url("../img/caravanarchy/rectgreentransparent.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+	outline: 4px white;
+	padding: 1vw;
+}
+li {
+  font-size: 2vw;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Roboto Mono';
+}
 	/* background-color: #CCFF33;
 	background: #9EF01A; */
 .texts {
