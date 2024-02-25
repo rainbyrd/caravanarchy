@@ -1,10 +1,9 @@
 .pdf object{
-    width: 80vw;
+    width: 81vw;
     height: 100vh;
-    margin-left: 20vw;
+    margin-top:-1vw;
+    margin-left: 19vw;
     padding: 0px;
-    frameBorder:"0";
-    scrolling:"auto";
 }
 
 /* Fixed sidenav, full height */
@@ -25,7 +24,7 @@
   font-family: 'Caudex';
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 2.5vw;
   color: #818181;
   display: block;
   border: none;
@@ -36,9 +35,9 @@
   outline: none;
 }
 
-.dropdown-container a{
+.dropdown-container a, .dropdown-container-open a{
   font-family: 'Spectral';
-  font-size: 16px;
+  font-size: 1.5vw;
   padding: 5px;
 }
 
@@ -58,7 +57,7 @@
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: 8FC93A;
+  background-color: #8FC93A;
   color: white;
 }
 
@@ -68,7 +67,11 @@
   background-color: #262626;
   padding-left: 8px;
 }
-
+.dropdown-container-open {
+  display: block;
+  background-color: #262626;
+  padding-left: 8px;
+}
 /* Optional: Style the caret down icon */
 .fa-caret-down {
   float: right;
@@ -147,6 +150,7 @@ h4 {
     border: 1px solid white;
 }
 
+/*
 p {
     color: black;
     padding: 15px;
@@ -159,3 +163,34 @@ li {
     font-size: 15px;
     font-family: 'Spectral';
 }
+*/
+
+
+@media (min-width: 700px) {
+    .sidenav a, .dropdown-btn {
+      font-size: 18px;
+    }
+
+    .dropdown-container a, .dropdown-container-open a{
+      font-size: 16px;
+    }
+}
+
+@media (width <= 1250px) {
+  /* … */
+}
+
+
+@media print {
+    .sidenav {
+        display: none;
+    }
+    .pdf object{
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0vw;
+
+    }    
+    
+}
+
