@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Plan</title>
+<link href="css/document.css" rel="stylesheet" type="text/css">
+<script src="js/document.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Caudex' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
+</head>
+
+<body>    
+    
+<div class="sidenav">
+  <button class="dropdown-btn">Intro to The Network
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="1.1_Intro.html">Intro to The Network</a>
+    <a href="1.2_VoluntaryismPlus.html">Voluntaryism, Plus</a>
+    <a href="1.3_OurPlan.html">Our Plan</a>
+    <a href="1.4_NewLexicon.html">New Lexicon</a>
+  </div>
+  <button class="dropdown-btn">Pragmatic Guide to Self Establishment
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="2.1_EntryGuide.html">Entry Guide</a>
+    <a href="2.2_Location.html">Transcending Location</a>
+    <a href="2.3_YouAndNetwork.html">You and The Network</a>
+    <a href="2.4_FreedomPrompts.html">Freedom Prompts</a>
+    <a href="2.5_AnarchyDegrees.html">Anarchy Degrees</a>
+  </div>
+  <button class="dropdown-btn">Applied Learning Grounds
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="3.1_CaravanWelcomeOutpost.html">Caravan Welcome Outpost</a>
+    <a href="3.2_Associations.html">Associations</a>
+    <a href="3.3_FreedomGuard">Freedom Guard</a>
+    <a href="3.4_SecurityMesh.html">Security Mesh</a>
+    <a href="3.5_AdmissionsPortal">Admissions Portal</a>
+  </div>
+  <button class="dropdown-btn">Anarchist Innovation Station
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">The Agora
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+<div class="pdf">
+<object data= "pdf/1.4.NewLexicon.pdf#toolbar=0&navpanes=0&view=FitH"> 
+        </object> 
+        
+</div>
+    
+    
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+  </body>
+</html>
