@@ -166,6 +166,25 @@ li {
 */
 
 
+/*
+.pdf a:link {
+  color: darkgray;
+}
+
+.pdf a:visited {
+  color: darkcyan;
+}
+
+.pdf a:hover {
+  color: teal;
+}
+
+.pdf a:active {
+  color: blue;
+}
+*/
+
+
 @media (min-width: 700px) {
     .sidenav a, .dropdown-btn {
       font-size: 18px;
