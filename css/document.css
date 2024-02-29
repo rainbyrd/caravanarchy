@@ -1,12 +1,23 @@
 .pdf object{
+    display: block;
+    position: fixed;
     width: 81vw;
     height: 100vh;
     margin-top:-1vw;
     margin-left: 19vw;
-    padding: 0px;
+    padding: 0;
 }
 
-/* Fixed sidenav, full height */
+.pdf_mobile object{
+    display: none;
+    position: fixed;
+    width: 81vw;
+    height: 100vh;
+    margin-top:-1vw;
+    margin-left: 19vw;
+    padding: 0;
+}
+
 .sidenav {
   height: 100%;
   width: 20vw;
@@ -19,7 +30,6 @@
   padding-top: 20px;
 }
 
-/* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn {
   font-family: 'Caudex';
   padding: 6px 8px 6px 16px;
@@ -41,17 +51,15 @@
   padding: 5px;
 }
 
-/* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
   background-color: black;
   outline: 1px solid white;
 }
 
-/* Main content */
 .main {
-  margin-left: 20vw; /* Same as the width of the sidenav */
-  font-size: 18px; /* Increased text to enable scrolling */
+  margin-left: 20vw;
+  font-size: 18px;
   padding: 0px 10px;
 }
 
@@ -83,17 +91,18 @@ body {
 /* letter-spacing: 2px;*/
 /* padding-bottom: 60px;*/
  background-color: rgba(0, 0, 0, 0.9);
- background-image: url("../img/caravanarchy/mapardark.png");
-/* min-height: 2345px;*/
- height: 100vh;
+/* background-image: url("../img/caravanarchy/mapardark.png");
+ min-height: 2345px;
  background-repeat: no-repeat;
  background-attachment: fixed;
- background-size: cover;
+ background-size: cover; */
  /* line-height: 1.7em; */
+ height: 100vh;
  color: #7f8c8d;
  font-size: 13px;
 }
 
+/*
 .bodytext {
 	background-color: rgba(255, 255, 255, 0.8);
     padding: .5vw;
@@ -108,7 +117,6 @@ h1 {
 	margin: 15px;
 	text-shadow: 2px 4px 4px rgba(37, 218, 0,0.6);
     -webkit-text-stroke: .1vw white;
-/*	background-color: #CCFF33;*/
     background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
 }
@@ -150,7 +158,6 @@ h4 {
     border: 1px solid white;
 }
 
-/*
 p {
     color: black;
     padding: 15px;
@@ -164,8 +171,6 @@ li {
     font-family: 'Spectral';
 }
 */
-
-
 /*
 .pdf a:link {
   color: darkgray;
@@ -184,6 +189,21 @@ li {
 }
 */
 
+@media (max-width: 500px), (orientation:portrait) {
+    .sidenav {
+        display: none;
+    }
+    .pdf_mobile object{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 1vw;
+        padding: 0;
+    } 
+    .pdf object{
+        display: none;
+    }
+}
 
 @media (min-width: 700px) {
     .sidenav a, .dropdown-btn {
@@ -195,10 +215,22 @@ li {
     }
 }
 
-@media (width <= 1250px) {
-  /* … */
+@media (501px < width < 800px){
+    .sidenav {
+        display: block;
+    }
+    .pdf object{
+        display: none;
+    }
+    .pdf_mobile object{
+        display: block;
+        width: 81vw;
+        height: 100vh;
+        margin-top:-1vw;
+        margin-left: 19vw;
+        padding: 0;
+    }
 }
-
 
 @media print {
     .sidenav {
@@ -207,15 +239,17 @@ li {
     .pdf object{
         width: 100vw;
         height: 100vh;
-        margin-left: 0vw;
-
-    }    
-    
+        margin-left: 0;
+        display: block;
+    }     
 }
 
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+/*
+min-width:320px smartphones, iPhone, portrait 480x320 phones 
+min-width:481px) portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.
+min-width:641px portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones
+min-width:961px tablet, landscape iPad, lo-res laptops ands desktops
+min-width:1025px big landscape tablets, laptops, and desktops
+min-width:1281px hi-res laptops and desktops*/
