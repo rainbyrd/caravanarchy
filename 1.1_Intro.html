@@ -14,8 +14,39 @@
 
 <body>    
 
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <p>We Are the Support Network</p>
+      <ul>
+        <li><a href="1.1_Intro.html">Intro to The Network</a></li>
+        <li><a href="1.2_VoluntaryismPlus.html">Voluntaryism, Plus</a></li>
+        <li><a href="1.3_OurPlan.html">Our Plan</a></li>
+      </ul>
+    <p>Pragmatic Guide to Creating Yourself</p>
+    <p>Applied Learning Grounds</p>
+    <p>Anarchist Innovation Station</p>
+    <p>The Agora</p>
+  </div>
+</div>
+
+<div class="header">
+  <a href="index.html" class="logo"><img src="img/vfire.png"></a>
+<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Navigation</span>   </div> 
+    
+
 <div class="sidenav">
-  <button class="dropdown-btn">Roadmap
+    <div>
+        <img src="img/vfire.png" alt="image">
+        <h4>Network Support</h4>
+    </div>
+    <hr>
+    <button class="dropdown-btn">Roadmap
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
@@ -108,6 +139,17 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+    
+/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+    
 </script>
 
   </body>
