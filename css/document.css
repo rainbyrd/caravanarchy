@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 /* The Overlay (background) */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
@@ -79,14 +83,19 @@ h4 {
 
 .logo {
     width: 30px;
-    position: fixed;
-    top: 10px;
-    right: 10px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    margin-right: 10px;
 }
 
 .logo img {
+/*
+    width: 30px;
+    height: 30px;
+*/
     max-width: 100%;
-    max-height: 100%
+    max-height: 100%;
 }
 
 .topnav {
@@ -95,8 +104,10 @@ h4 {
   padding: 5px;
 /*  height: 25px;*/
   position: relative;
-  top: 0px;
+  top: 0;
   display: block;
+  width: 100%;
+  margin: 0;
 }
 
 .topnav span {
@@ -237,6 +248,7 @@ body {
  color: #7f8c8d;
  font-size: 13px;
  overflow: hidden;
+ margin: 0;
 }
 
 /*
@@ -327,6 +339,9 @@ li {
 */
 
 @media (max-width: 522px), (orientation:portrait) {
+    body {
+        max-height: 100%;
+    }
     .sidenav {
         display: none;
     }
@@ -334,12 +349,14 @@ li {
         display: block;
         width: 100vw;
         height: calc(100vh - 38px);
-        margin-left: 1vw;
-/*        margin-top: 25px;*/
-        padding: 0;
+/*        margin-top: 38px;*/
+        margin: 0;
     }
     .pdf object{
         display: none;
+    }
+    .logo {
+        margin-right: 20px;
     }
 }
 
