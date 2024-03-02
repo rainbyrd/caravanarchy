@@ -30,11 +30,15 @@
   color: #818181;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
+  font-family: "Kode Mono", monospace;
 }
 
 .overlay p {
     font-size: 7vw;
     margin: 5px;
+    font-family: "Share Tech Mono", monospace;
+    padding: 5px;
+    border: 5px solid #2f5569;
 }
 
 .overlay li {
@@ -87,11 +91,15 @@ h4 {
 
 .topnav {
   overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
+  background-color: #000000;
+  padding: 5px;
   position: relative;
+  display: block;
 }
 
+.topnav span {
+    font-family: "Kode Mono", monospace;
+}
 /*
 .topnav a {
   color: white;
@@ -121,7 +129,7 @@ h4 {
     position: fixed;
     width: 81vw;
     height: 100vh;
-    margin-top:-1vw;
+    margin-top: -1vw;
     margin-left: 19vw;
     padding: 0;
 }
@@ -168,6 +176,7 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  image-rendering: pixelated;
 }
 
 .dropdown-container a, .dropdown-container-open a{
@@ -337,8 +346,8 @@ li {
     }
 }
 
-@media (min-width: 500px) {
-    .header {
+@media (min-width: 501px) {
+    .topnav {
         display: none;
     }
     .overlay {
