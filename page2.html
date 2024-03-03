@@ -2,8 +2,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>We Are Network Support</title>
-		<link href="css/document.css" rel="stylesheet" type="text/css">
+		<title>Intro to the Network</title>
+		<link href="css/custom2.css" rel="stylesheet" type="text/css">
 		<script src="js/document.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,10 +82,108 @@
 			</div>
 		</div>
 
-		<div class="pdf">
-			<object data= "pdf/0.1_Index.pdf#toolbar=0&navpanes=0&view=FitH"> 
-			</object> 
-
+		<div class="main">
+			<h1 class="headerbox">Enter Here</h1>
+			<div id="bodyboxcontainer">
+				<div class="bodyboxlink"><p>Here are three pathways:</p>
+					</div>
+				<div class="boxflex1">
+					<div id= "bodybox3">
+						<h2>Wealth</h2>
+						<p>Looking to gain wealth while escaping government extortion?</p>
+						 <button id="select-box1">GO</button>
+					</div>
+					<div id= "bodybox4">
+						<h2>Housing</h2><p>Looking for habitation that doesn’t fund the state?</p>
+						<button id="select-box2">GO</button>
+					</div>
+					 <div id= "bodybox5">
+						<h2>Passion</h2><p>Looking to follow your passion?</p>
+						 <button id="select-box3">GO</button>
+					</div>
+				</div>
+			</div>
+			<div id= "box1" style="display:none;"> <h3>Wealth</h3><div class="grid-options">
+				<div id="option11">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option12">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option13">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option14">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option15">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option16">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+			</div>
+			</div>
+			<div id= "box2" style="display:none;"> <h3>Housing</h3><div class="grid-options">
+				<div id="option21">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option22">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option23">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option24">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option25">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option26">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+			</div>
+			</div>
+			<div id= "box3" style="display:none;"> <h3>Passion</h3><div class="grid-options">
+				<div id="option31">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option32">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option33">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option34">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option35">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+				<div id="option36">
+					<h4>Header</h4>
+					<p>Words</p>
+				</div>
+			</div>
+			</div>
 		</div>
 
 
@@ -105,6 +203,31 @@
 					}
 				});
 			}
+			
+			const box1 = document.querySelector('#box1');
+			const box2 = document.querySelector('#box2');
+			const box3 = document.querySelector('#box3');
+			const selectBox1Btn = document.querySelector('#select-box1');
+			const selectBox2Btn = document.querySelector('#select-box2');
+			const selectBox3Btn = document.querySelector('#select-box3');
+			
+			selectBox1Btn.addEventListener('click', () => {
+			box1.style.display = "block";
+			box2.style.display = "none";
+			box3.style.display = "none";
+			});
+
+			selectBox2Btn.addEventListener('click', () => {
+			box1.style.display = "none";
+			box2.style.display = "block";
+			box3.style.display = "none";
+			});
+			
+			selectBox3Btn.addEventListener('click', () => {
+			box1.style.display = "none";
+			box2.style.display = "none";
+			box3.style.display = "block";
+			});
 		</script>
 
 	</body>
