@@ -424,7 +424,7 @@ color: blue;
 }
 */
 
-@media (max-width: 522px), (orientation:portrait) {
+@media (max-width: 522.9px), (orientation:portrait) {
 	body {
 		max-height: 100%;
 	}
@@ -491,7 +491,7 @@ color: blue;
 	} 
 }
 
-@media (523px < width < 800px){
+@media (523.1px < width < 800px){
 
 	.pdf object{
 		display: none;
@@ -504,7 +504,7 @@ color: blue;
 	}
 }
 
-@media (min-width: 801px) {
+@media (min-width: 800.1px) {
 	.sidenav a, .dropdown-btn {
 		font-size: 18px;
 	}

@@ -707,7 +707,7 @@ color: blue;
         margin-left: 10px;
     }
     h2 {
-        font-size: 5vw;
+        font-size: 3vw;
     }
     h4 {
         font-size: 3vw;
@@ -719,22 +719,22 @@ color: blue;
 	}
 }
 
-@media (801px < width < 1160px) {
+@media (800.1px < width < 1160px) {
     .grid-options {
        grid-template-columns: repeat(3, minmax(0px,1fr));
         width: 72vw;
     }
     h2 {
-        font-size: 4vw;
+        font-size: 3vw;
     }
     
     h4 {
-    font-size: 3vw;
+        font-size: 3vw;
     }
 
 }
 
-@media (min-width: 801px) {
+@media (min-width: 800.1px) {
 	.sidenav a, .dropdown-btn {
 		font-size: 18px;
 	}
@@ -742,6 +742,9 @@ color: blue;
 	.dropdown-container a, .dropdown-container-open a{
 		font-size: 16px;
 	}
+    h2 {
+        font-size: 3vw;
+    }
 }
 
 @media print {

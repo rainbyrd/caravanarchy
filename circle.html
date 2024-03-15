@@ -2,8 +2,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>We Are Network Support</title>
-		<link href="css/document.css" rel="stylesheet" type="text/css">
+		<title>Positive Thinking</title>
+<!--		<link href="css/custom2.css" rel="stylesheet" type="text/css">-->
+		<link href="css/new.css" rel="stylesheet" type="text/css">
 		<script src="js/document.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,13 +83,22 @@
 			</div>
 		</div>
 
-		<div class="pdf">
-			<object data= "pdf/0_Index.pdf#toolbar=0&navpanes=0&view=FitH"> 
-			</object> 
+<!-- content to be placed inside <body>…</body> -->
+<div class='circle-container'>
+	<a href='#' class='center'><div><h3>Voluntary Welcome Outpost</h3></div></a>
+	<a href='#' class='deg0'><div><h3>Cafe</h3></div></a>
+	<a href='#' class='deg45'><div><h3>Library</h3></div></a>
+	<a href='#' class='deg90'><div><h3>Private Comms</h3></div></a>
+	<a href='#' class='deg135'><div><h3>Admissions</h3></div></a>
+	<a href='#' class='deg180'><div><h3>Bazaar</h3></div></a>
+	<a href='#' class='deg225'><div><h3>Security</h3></div></a>
+	<a href='#' class='deg270'><div><h3>Public Comms</h3></div></a>
+	<a href='#' class='deg315'><div><h3>Something</h3></div></a>
+</div>
 
-		</div>
-
-
+        
+        
+<!--
 		<script>
 			/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 			var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -105,7 +115,54 @@
 					}
 				});
 			}
+			
+			const box1 = document.querySelector('#box1');
+			const box2 = document.querySelector('#box2');
+			const box3 = document.querySelector('#box3');
+            const option1 = document.querySelector('#bodybox3');
+            const option2 = document.querySelector('#bodybox4');
+            const option3 = document.querySelector('#bodybox5');
+			const selectBox1Btn = document.querySelector('#select-box1');
+			const selectBox2Btn = document.querySelector('#select-box2');
+			const selectBox3Btn = document.querySelector('#select-box3');
+			
+			selectBox1Btn.addEventListener('click', () => {
+			box1.style.display = "block";
+			box2.style.display = "none";
+			box3.style.display = "none";
+            option1.style.background = "#5e9b1c";
+            option2.style.background = "#2f8ec1";
+            option3.style.background = "#1CCAD8";   
+//            option1.style.outline = "4px solid white;";
+//            option2.style.outline = "none;";
+//            option3.style.outline = "none;";
+            });
+
+			selectBox2Btn.addEventListener('click', () => {
+			box1.style.display = "none";
+			box2.style.display = "block";
+			box3.style.display = "none";
+            option1.style.background = "#97DB4F";
+            option2.style.background = "#126693";
+            option3.style.background = "#1CCAD8";
+//            option2.style.outline = "4px solid white;";
+//            option1.style.outline = "none;";
+//            option3.style.outline = "none;";
+			});
+			
+			selectBox3Btn.addEventListener('click', () => {
+			box1.style.display = "none";
+			box2.style.display = "none";
+			box3.style.display = "block";
+            option1.style.background = "#97DB4F";
+            option3.style.background = "#1d929b";
+            option2.style.background = "#2f8ec1";
+//            option3.style.outline = "4px solid white;";
+//            option2.style.outline = "none;";
+//            option1.style.outline = "none;";
+			});
 		</script>
+-->
 
 	</body>
 </html>
