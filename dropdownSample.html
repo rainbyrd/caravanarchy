@@ -1,0 +1,173 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>We Are Network Support</title>
+<link href="css/document.css" rel="stylesheet" type="text/css">
+<script src="js/document.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Caudex' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Spectral' rel='stylesheet'>
+</head>
+    
+<body>
+
+<div class="room-sort">
+
+  <ul class="room-sort-menu">
+
+    <span class="sort">Sort by :</span>
+    <li class="dropdown"><a class="dropBtn" href="#">Price <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <ul class="dropMenu">
+        <li><a href="#">Price (hi to low)</a></li>
+        <li><a href="#">Price (low to hi)</a></li>
+      </ul>
+    </li>
+    <li class="dropdown"><a class="dropBtn" href="#">Stars <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <ul class="dropMenu">
+        <li><a href="#">Stars (hi to low)</a></li>
+        <li><a href="#">Stars (low to hi)</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown"><a class="dropBtn" href="#">Review score <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <ul class="dropMenu">
+        <li><a href="#">Score (hi to low)</a></li>
+        <li><a href="#">Score (low to hi)</a></li>
+      </ul>
+    </li>
+  </ul>
+
+</div>
+    
+<style>
+.room-sort {
+  background: #434A54;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.room-sort-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+span.sort {
+  margin-right: 30px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.sort-mobile {
+  display: none;
+}
+
+.room-sort-menu>li {
+  display: inline-block;
+  color: #fff;
+}
+
+.room-sort-menu>li>a {
+  display: inline-block;
+  padding: 16px 30px;
+  margin: 0;
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.room-sort-menu>li>a:hover,
+.room-sort-menu>li>a:focus {
+  background: #2e333a;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropMenu {
+  position: absolute;
+  display: none;
+  top: 46px;
+  left: 0px;
+  border: 1px solid color;
+  width: 109px;
+  background: #CB242D;
+  font-size: 0.8em;
+  z-index: 1;
+}
+
+.show {
+  display: block;
+}
+
+.room-sort-menu li:last-of-type ul.dropMenu {
+  width: 166px;
+}
+
+.dropMenu li a {
+  display: block;
+  padding: 16px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropMenu li a:hover {
+  background: #a0080d;
+}
+
+</style>
+
+
+<script>
+
+(function() {
+
+  var dropBtns = document.querySelectorAll('.dropdown');
+
+  function closeOpenItems() {
+      openMenus = document.querySelectorAll('.dropMenu');
+      openMenus.forEach(function(menus) {
+        menus.classList.remove('show');
+      });  
+  }
+
+  dropBtns.forEach(function(btn) {
+
+    btn.addEventListener('click', function(e) {
+      var 
+        dropContent = btn.querySelector('.dropMenu'),
+        shouldOpen = !dropContent.classList.contains('show');
+      e.preventDefault();
+
+      // First close all open items.
+      closeOpenItems();
+      // Check if the clicked item should be opened. It is already closed at this point so no further action is required if it should be closed.
+      if (shouldOpen) {
+        // Open the clicked item.
+        dropContent.classList.add('show');      
+      }
+      e.stopPropagation();
+    });
+
+
+  });
+
+  //   close menus when clicking outside of them
+  window.addEventListener('click', function(event) {
+    if (event.target != dropBtns) {
+      // Moved the code here to its own function.
+      closeOpenItems();
+    }
+  });
+
+})();
+
+</script>
+
+</body>
+    
+</html>

@@ -41,12 +41,27 @@
   <a href="index.html" class="logo"><img src="img/vroad.png"></a>
 <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; Navigation</span>   </div> 
     
+<div class="menu-btn">
+    <i class="fas fa-bars"></i>
+</div>
 
 <div class="sidenav">
+
+     <header>
+         <div class="close-btn">
+
+           <i class="fas fa-times"></i>
+         </div>
+         <img src="img/vroad.png" alt="">
+              <h1>Network Support</h1>
+     </header>
+       
+<!--
     <div>
         <img src="img/vroad.png" alt="image">
         <h4>Network Support</h4>
     </div>
+-->
     <hr>
     <button class="dropdown-btn">Roadmap
     <i class="fa fa-caret-down"></i>
@@ -58,7 +73,7 @@
   <button class="dropdown-btn">We Are Network Support
     <i class="fa fa-caret-down"></i>
   </button>
-    <div class="dropdown-container-open">
+    <div class="dropdown-container">
     <a href="1.1_Intro.html">Intro to The Network</a>
     <a href="1.2_VoluntaryismPlus.html">Voluntaryism, Plus</a>
     <a href="1.3_FreedomPrompts.html">Freedom Prompts</a>
@@ -127,10 +142,14 @@
 <script>
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+var i; 
 
 for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
+   
+dropdown[i].addEventListener("click", function() {
+    var lst = document.getElementsByClassName("dropdown-container");
+    for (var j = 0; j < lst.length; j++) { lst[j].style.display = "none";}
+    
     this.classList.toggle("active");
     var dropdownContent = this.nextElementSibling;
     if (dropdownContent.style.display === "block") {
