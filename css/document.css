@@ -165,23 +165,54 @@ h4 {
   top: 0;
   left: 0;
   background-color: #111;
-  overflow: hidden;
-  padding: 10px;
+  overflow: auto;
+  padding: 10px 0 10px 5px;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+	body, .sidenav {
+    scrollbar-width: thin;
+    scrollbar-color: #8f54a0 #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  .main, .sidenav::-webkit-scrollbar {
+    width: thin;
+  }
+
+  .main, .sidenav::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  .main, .sidenav::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
 
 .sidenav a, .dropdown-btn {
   font-family: 'Caudex';
-  padding: 6px 8px 6px 16px;
+/*  padding: 6px 8px 6px 16px;*/
+  padding: 5px;
   text-decoration: none;
   font-size: 2.5vw;
   color: #818181;
   display: block;
   border: none;
   background: none;
-  width:100%;
+  width: calc(20vw - 5px);
   text-align: left;
   cursor: pointer;
   outline: none;
+}
+
+.dropdown-btn {
+  margin-top: 5px;
+}
+
+.dropdown-btn:active {
+  margin-top: 5px;
 }
 
 .sidenav img {
@@ -195,13 +226,20 @@ h4 {
 .dropdown-container a, .dropdown-container-open a{
   font-family: 'Spectral';
   font-size: 1.5vw;
-  padding: 5px;
+  padding: 3px;
+  max-width: calc(20vw - 26px);
 }
 
 .sidenav a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
   background-color: black;
   outline: 1px solid white;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #1f1f1f;
+  outline: 0.5px solid white;
 }
 
 .main {
@@ -212,7 +250,7 @@ h4 {
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: #8FC93A;
+  background-color: #5a5a5a;
   color: white;
 }
 
@@ -221,11 +259,14 @@ h4 {
   display: none;
   background-color: #262626;
   padding-left: 8px;
+  margin-right: 5px;
 }
 .dropdown-container-open {
   display: block;
-  background-color: #262626;
-  padding-left: 8px;
+  background-color: #272727;
+  padding: 0 8px 0 8px;
+  margin-right: 5px;
+/*  max-width: calc(20vw - 5px);*/
 }
 /* Optional: Style the caret down icon */
 .fa-caret-down {
@@ -247,7 +288,7 @@ body {
  height: 100vh;
  color: #7f8c8d;
  font-size: 13px;
-/* overflow: hidden;*/
+ overflow: hidden;
  margin: 0;
  
 }
@@ -384,7 +425,10 @@ li {
 
 @media (523px < width < 800px){
 
-    .pdf object{
+	.sidenav {
+		padding: 5px;
+	} 
+	.pdf object{
         display: none;
     }
     .pdf_mobile object{
