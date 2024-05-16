@@ -1,0 +1,354 @@
+body {
+    background-image: url("../img/igloo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: 1D1D1D;
+    background-size: 100vw;
+}
+
+h1 {
+  font-family: "Reggae One";
+  color: white;
+  font-size: 5vw;
+  text-align: center;
+  border: 0;
+  margin: 0 0 15px 0;
+  
+}
+
+h2 {
+/*    padding: 10px;*/
+    margin: 5px;
+    text-align: center;
+    font-family: "Reggae One";
+    font-size: 5vw;
+    color: white;
+}
+
+h3 {
+    margin: 5px;
+    text-align: center;
+    font-family: "Reggae One";
+    font-size: 3.5vw; 
+}
+
+h4 {
+    font-size: 3vw;
+    margin: 5px;
+}
+
+li {
+
+    /*list-style-type: none;*/
+    list-style-type: "⪢ ";
+    font-family: "Goudy Bookletter 1911";
+    font-size: 2.5vw;
+}
+
+ul {
+    margin-left: -10px;
+}
+.a {
+    font-size: 3.5vw;
+    list-style-type: none;
+}
+
+/*
+li::marker {
+    content: "+";
+    list-style-type: "⇢ ";
+    list-style-image: url("http://png.com/ellipse.png")
+    list-style-image: url("../img/arrow.png");
+    list-style-type: "⇸ ";
+    list-style-type: "↦ ";
+}
+*/
+
+.reggae-one-regular {
+  font-family: "Reggae One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  font-size: 9vw;
+}
+
+.title {
+    border: 15px solid;
+    border-color: 1D6A7E;
+    background-color: rgba(83,179,203,0.7);
+}
+
+#hibiscus {
+    height: 14vw;
+    position: absolute;
+    left: 25px;
+    top: 50px;
+}
+
+#hibiscus1 {
+    height: 14vw;
+    position: absolute;
+    right: 25px;
+    top: 50px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#blackhibiscus {
+    height: 14vw;
+    position: absolute;
+    left: 25px;
+    top: 280px;
+    z-index: -1;
+}
+
+#blackhibiscus1 {
+    height: 14vw;
+    position: absolute;
+    right: 25px;
+    top: 280px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.flavors {
+    display: grid;
+    color: white;
+    margin: 20px;
+/*    height: calc(300px - 60vw);*/
+}
+
+.buttons {
+    display: grid;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.buttons a:link {
+    text-decoration: none;
+}
+
+.about {
+
+}
+
+.button1 {
+    grid-column: 1;
+    background-color: rgba(99,159,171,0.7);
+    border: 10px solid;
+    border-color: 639FAB;
+}
+
+button1 a:hover {
+  background-color: rgba(99,159,171,0.9);
+}
+
+.abouttext {
+    background-color: rgba(99,159,171,0.7);
+    border-right: 10px solid;
+    border-left: 10px solid;
+    border-bottom: 10px solid;
+    border-color: 639FAB;
+    padding: 15px;
+    height: calc(620px - 30vw);
+    overflow: scroll;
+}
+
+.ingredients {
+    grid-column: 2;
+    margin-left: 2vw;
+}
+
+.button2 {
+    grid-column: 2;
+    background-color: rgba(184,211,218,0.7);
+    border: 10px solid;
+    border-color: B8D3DA;
+}
+
+.ingredientstext {
+    background-color: rgba(184,211,218,0.7);
+    border-right: 10px solid;
+    border-left: 10px solid;
+    border-bottom: 10px solid;
+    border-color: B8D3DA;
+    padding: 15px;
+    grid-column: 2;
+    height: calc(620px - 30vw);
+    overflow: scroll;
+}
+
+.column1 {
+    background-color: rgba(99,159,171,0.7);
+    border: 10px solid;
+    border-color: 639FAB;
+    grid-column: 1;
+    display: grid;
+    width: 45vw;
+    height: calc(700px - 30vw);
+    margin-right: 1vw;
+    position: fixed;
+    left: 10px;
+}
+
+.column2 {
+    background-color: rgba(184,211,218,0.7);
+    border: 10px solid;
+    border-color: B8D3DA;
+    grid-column: 2;
+    display: grid;
+    width: 45vw;
+    height: calc(700px - 30vw);
+    margin-left: 1vw;
+    position: fixed;
+    right: 10px;
+}
+
+.smalltitle1 {
+    background-color: rgba(99,159,171,0.7);
+    border-bottom: 7px solid;
+    border-color: rgba(99,159,171,0.9);
+    grid-row: 1;
+    height: 7vw;
+/*    grid-column: 1;*/
+}
+.smalltitle2 {
+    background-color: rgba(184,211,218,0.7);
+    border-bottom: 7px solid;
+    border-color: rgba(184,211,218,0.9);
+    grid-row: 1;
+    height: 7vw;
+/*    grid-column: 2;*/
+}
+.flavorslist1 {
+/*    grid-column: 1;*/
+    margin-top: -10px;
+    grid-row: 2;
+    overflow-y: scroll;
+}
+
+.flavorslist2 {
+    margin-top: -10px;
+    grid-row: 2;
+    overflow-y: scroll;
+/*    grid-column: 2;*/
+}
+.mainingredients {
+    background-color: rgba(184,211,218,0.7);
+    border: 10px solid;
+    border-color: B8D3DA;
+}
+
+.name {
+    background-color:  rgba(99,159,171,0.6);
+    border: none;
+    margin-top: -10px;
+    margin-left: -25px;
+}
+
+.ingredientstitle {
+    margin-top: -10px;
+    background-color: rgba(184,211,218,0.6);
+    border-bottom: 7px solid;
+    border-color: rgba(184,211,218,0.9);
+}
+.ingredients1 {
+    background-color: rgba(99,159,171,0.4);
+    border: 7px solid;
+    border-color: rgba(99,159,171,0.9);
+    margin-bottom: 7px;
+    padding-left: 20px;
+}
+.ingredients2 {
+    background-color: rgba(99,159,171,0.4);
+    border: 7px solid;
+    border-color: rgba(99,159,171,0.9);
+    margin-bottom: 7px;
+    padding-left: 20px;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 1vw;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.4);
+      -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,.6);
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0);
+}
+
+
+@media (min-width: 1001px) {
+    .column1 {
+        height: calc(750px - 30vw);
+    }
+    .column2 {
+        height: calc(750px - 30vw);     
+    }
+}
+
+@media (min-width: 1121px) {
+    .column1 {
+        height: calc(780px - 30vw);
+    }
+    .column2 {
+        height: calc(780px - 30vw);     
+    }
+    #blackhibiscus {
+        top: 410px;
+    }
+    #blackhibiscus1 {
+        top: 410px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .column1 {
+        height: calc(730px - 30vw);
+    }
+    .column2 {
+        height: calc(730px - 30vw);     
+    }
+}
+
+@media (max-width: 640px) {
+    #hibiscus {
+        height: 12vw;
+    }
+    #hibiscus1 {
+        height: 12vw;
+    }
+    #blackhibiscus {
+        top: 230px;
+    }
+    #blackhibiscus1 {
+        top: 230px;
+    }
+    .column1 {
+        height: calc(700px - 30vw);
+    }
+    .column2 {
+        height: calc(700px - 30vw);     
+    }
+}
+
+/*
+@media (min-width: 1201px) {
+    .column1 {
+    }
+    .column2 {
+    }
+}
+*/
