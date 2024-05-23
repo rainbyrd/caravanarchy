@@ -19,6 +19,10 @@ body {
 	top: 5px;
 }
 
+.warning {
+		background-color: #5a0000;
+	}
+
 a {
 	text-decoration: none;
 	color: white;
@@ -209,26 +213,6 @@ h6 {
 }
 */
 
-
-.pdf object{
-	display: block;
-	position: relative;
-	width: 81vw;
-	height: 100vh;
-	margin-top: -1vw;
-	margin-left: 19vw;
-	padding: 0;
-}
-
-.pdf_mobile object{
-	display: none;
-	position: relative;
-	width: 81vw;
-	height: 100vh;
-	margin-left: 19vw;
-	padding: 0;
-}
-
 .bodytext {
 	width: 75vw;
 	margin-left: 22vw;
@@ -245,10 +229,12 @@ h6 {
 	background-color: #111;
 	overflow: auto;
 	padding: 0 0 10px 5px;
+	margin-bottom: 20px;
 }
 
 .side {
 /*  overflow: auto;*/
+/*	margin-bottom: 20px;*/
 }
 
 body, .sidenav, .side {
@@ -388,14 +374,11 @@ body, .sidenav, .side {
 	.bodytext {
 		margin-top: 40px;
 		margin-left: 2vw;
-		width: 96vw;
+		width: 94vw;
 	}
 	
-	.warning {
-		background-color: #5a0000;
-	}
 	h1 {
-		font-size: 8vw;
+		font-size: 9vw;
 	}
 	
 	h2 {
@@ -444,6 +427,7 @@ body, .sidenav, .side {
 	} 
 	.bodytext {
 		margin-left: 22vw;
+		width: 75vw;
 	}
 	.dropdown-container a, .dropdown-container-open a{
 	  font-size: 14px;
