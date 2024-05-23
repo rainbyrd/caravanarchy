@@ -378,17 +378,9 @@ body, .sidenav, .side {
 	.sidenav {
 		display: none;
 	}
-	.pdf_mobile object{
-		display: block;
-		width: 100vw;
-		height: calc(100vh - 38px);
-		margin-top: 38px;
-		margin-left: 0;
-		margin-bottom: 0;
-		margin-right: 0;
-	}
-	.pdf object{
-		display: none;
+	
+	.bodytext {
+		margin-left: 5px;
 	}
 	.logo {
 		margin-right: 20px;
@@ -408,13 +400,6 @@ body, .sidenav, .side {
 	 .sidenav {
 		display: block;
 	}
-	 .pdf_mobile object{
-		width: 81vw;
-		height: 100vh;
-		margin-top:-1vw;
-		margin-left: 19vw;
-		padding: 0;
-	} 
 }
 
 @media (523px < width < 800px){
@@ -422,11 +407,8 @@ body, .sidenav, .side {
 	.sidenav {
 		padding: 5px;
 	} 
-	.pdf object{
-		display: none;
-	}
-	.pdf_mobile object{
-		display: block;
+	.bodytext {
+		margin-left: 22vw;
 	}
 	.dropdown-container a, .dropdown-container-open a{
 	  font-size: 14px;
