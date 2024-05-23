@@ -1,19 +1,24 @@
-body {
+html, body {
+    background-color: #1D1D1D;    
     background-image: url("../img/igloo.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-color: 1D1D1D;
     background-size: 100vw;
 }
 
+p {
+    text-align: center;
+    font-family: "Goudy Bookletter 1911";
+}
+
 h1 {
-  font-family: "Reggae One";
-  color: white;
-  font-size: 5vw;
-  text-align: center;
-  border: 0;
-  margin: 0 0 15px 0;
+	font-family: "Reggae One";
+	color: white;
+	font-size: 5vw;
+	text-align: center;
+	border: 0;
+	margin: 0 0 15px 0;
   
 }
 
@@ -22,7 +27,7 @@ h2 {
     margin: 5px;
     text-align: center;
     font-family: "Reggae One";
-    font-size: 5vw;
+    font-size: 4.5vw;
     color: white;
 }
 
@@ -35,11 +40,12 @@ h3 {
 
 h4 {
     font-size: 3vw;
+    font-family: "Goudy Bookletter 1911";
+    font-weight: 600;
     margin: 5px;
 }
 
 li {
-
     /*list-style-type: none;*/
     list-style-type: "⪢ ";
     font-family: "Goudy Bookletter 1911";
@@ -49,21 +55,21 @@ li {
 ul {
     margin-left: -10px;
 }
+
 .a {
     font-size: 3.5vw;
     list-style-type: none;
 }
 
-/*
-li::marker {
-    content: "+";
-    list-style-type: "⇢ ";
-    list-style-image: url("http://png.com/ellipse.png")
-    list-style-image: url("../img/arrow.png");
-    list-style-type: "⇸ ";
-    list-style-type: "↦ ";
+.b {
+    font-size: 3.5vw;    
 }
-*/
+
+.organic {
+    text-align: right;
+    margin: 0;
+    font-size: 1.2em;
+}
 
 .reggae-one-regular {
   font-family: "Reggae One", system-ui;
@@ -76,15 +82,18 @@ li::marker {
 
 .title {
     border: 15px solid;
-    border-color: 1D6A7E;
+    border-color: #1D6A7E;
     background-color: rgba(83,179,203,0.7);
+    margin-left: 20px;
+    z-index: -1;
 }
 
 #hibiscus {
     height: 14vw;
     position: absolute;
-    left: 25px;
+    left: 45px;
     top: 50px;
+    z-index: 0;
 }
 
 #hibiscus1 {
@@ -94,12 +103,13 @@ li::marker {
     top: 50px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    z-index: 0;
 }
 
 #blackhibiscus {
     height: 14vw;
     position: absolute;
-    left: 25px;
+    left: 45px;
     top: 280px;
     z-index: -1;
 }
@@ -118,6 +128,7 @@ li::marker {
     display: grid;
     color: white;
     margin: 20px;
+/*    height: 70vw;*/
 /*    height: calc(300px - 60vw);*/
 }
 
@@ -125,6 +136,7 @@ li::marker {
     display: grid;
     margin: 20px;
     overflow: hidden;
+    margin-left: 40px;
 }
 
 .buttons a:link {
@@ -139,7 +151,7 @@ li::marker {
     grid-column: 1;
     background-color: rgba(99,159,171,0.7);
     border: 10px solid;
-    border-color: 639FAB;
+    border-color: #639FAB;
 }
 
 button1 a:hover {
@@ -147,11 +159,11 @@ button1 a:hover {
 }
 
 .abouttext {
-    background-color: rgba(99,159,171,0.7);
+    background-color: rgba(99,159,171,0.9);
     border-right: 10px solid;
     border-left: 10px solid;
     border-bottom: 10px solid;
-    border-color: 639FAB;
+    border-color: #639FAB;
     padding: 15px;
     height: calc(620px - 30vw);
     overflow: scroll;
@@ -166,15 +178,15 @@ button1 a:hover {
     grid-column: 2;
     background-color: rgba(184,211,218,0.7);
     border: 10px solid;
-    border-color: B8D3DA;
+    border-color: #B8D3DA;
 }
 
 .ingredientstext {
-    background-color: rgba(184,211,218,0.7);
+    background-color: rgba(184,211,218,0.9);
     border-right: 10px solid;
     border-left: 10px solid;
     border-bottom: 10px solid;
-    border-color: B8D3DA;
+    border-color: #B8D3DA;
     padding: 15px;
     grid-column: 2;
     height: calc(620px - 30vw);
@@ -184,27 +196,30 @@ button1 a:hover {
 .column1 {
     background-color: rgba(99,159,171,0.7);
     border: 10px solid;
-    border-color: 639FAB;
+    border-color: #639FAB;
     grid-column: 1;
     display: grid;
-    width: 45vw;
+    width: 43vw;
     height: calc(700px - 30vw);
     margin-right: 1vw;
+    margin-left: 20px;
     position: fixed;
     left: 10px;
+    z-index: -1;
 }
 
 .column2 {
     background-color: rgba(184,211,218,0.7);
     border: 10px solid;
-    border-color: B8D3DA;
+    border-color: #B8D3DA;
     grid-column: 2;
     display: grid;
-    width: 45vw;
+    width: 43vw;
     height: calc(700px - 30vw);
     margin-left: 1vw;
     position: fixed;
     right: 10px;
+    z-index: -1;
 }
 
 .smalltitle1 {
@@ -225,21 +240,36 @@ button1 a:hover {
 }
 .flavorslist1 {
 /*    grid-column: 1;*/
-    margin-top: -10px;
+/*    margin-top: -10px;*/
     grid-row: 2;
     overflow-y: scroll;
 }
 
 .flavorslist2 {
-    margin-top: -10px;
+/*    margin-top: -10px;*/
     grid-row: 2;
     overflow-y: scroll;
 /*    grid-column: 2;*/
 }
+
+.flavorslist3 {
+/*    margin-top: -10px;*/
+    grid-row: 2;
+    overflow-y: scroll;
+}
+
+.flavorslist4 {
+/*    margin-top: -10px;*/
+    grid-row: 2;
+    overflow-y: scroll;
+}
+
 .mainingredients {
     background-color: rgba(184,211,218,0.7);
     border: 10px solid;
-    border-color: B8D3DA;
+    border-color: #B8D3DA;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .name {
@@ -271,8 +301,8 @@ button1 a:hover {
 }
 
 ::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 1vw;
+	-webkit-appearance: none;
+	width: 1vw;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -287,6 +317,109 @@ button1 a:hover {
 
 ::-webkit-scrollbar-corner {
     background: rgba(0,0,0,0);
+}
+
+.side-bar{
+	background: #1b1a1b;
+	backdrop-filter: blur(15px);
+	width: 180px;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: -180px;
+	overflow-y: auto;
+	transition: 0.6s ease;
+	transition-property: left;
+	z-index: 1;
+}
+.side-bar::-webkit-scrollbar {
+	width: 0px;
+}
+.side-bar.active{
+	left: 0;
+}
+
+.side-bar .menu{
+	width: 100%;
+	margin-top: 30px;
+}
+
+.side-bar .menu .item{
+	position: relative;
+	cursor: pointer;
+}
+
+.side-bar .menu .item a{
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	display: block;
+	padding: 5px 30px;
+	line-height: 60px;
+}
+
+.side-bar .menu .item a:hover{
+	background: #33363a;
+	transition: 0.3s ease;
+}
+
+.side-bar .menu .item i{
+	margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown{
+	position: absolute;
+	right: 0;
+	margin: 20px;
+	transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+	background: #262627;
+	display: none;
+}
+
+.side-bar .menu .item .sub-menu a{
+	padding-left: 80px;
+}
+
+.close-btn{
+	position: absolute;
+	color: #fff;
+	font-size: 23px;
+	right:  0px;
+	margin: 15px;
+	cursor: pointer;
+}
+
+.menu-btn{
+	position: absolute;
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+	margin: 0;
+	cursor: pointer;
+}
+
+.menuwords {
+	font-family: "Reggae One";
+	color: white;
+	font-size: 5vw;
+	text-align: center;
+	border: 0;
+	padding-bottom: 5px;
+	margin: 0 0 15px 0;
+	background-color: #222222;
+}
+
+#logo{
+	width: 130px;
+	margin: 10px;
+	margin-left: 24px;
+	border-radius: 50%;
+	/*  border: 3px solid #b4b8b9;*/
+}
+header{
+	background: #33363a;
 }
 
 
@@ -321,14 +454,20 @@ button1 a:hover {
     .column2 {
         height: calc(730px - 30vw);     
     }
-}
-
-@media (max-width: 640px) {
     #hibiscus {
         height: 12vw;
     }
     #hibiscus1 {
         height: 12vw;
+    }
+}
+
+@media (max-width: 640px) {
+    #hibiscus {
+        height: 9vw;
+    }
+    #hibiscus1 {
+        height: 9vw;
     }
     #blackhibiscus {
         top: 230px;
@@ -342,13 +481,10 @@ button1 a:hover {
     .column2 {
         height: calc(700px - 30vw);     
     }
-}
-
-/*
-@media (min-width: 1201px) {
-    .column1 {
+    li {
+        font-size: 3vw;
     }
-    .column2 {
+    p {
+        font-size: 3vw;    
     }
 }
-*/

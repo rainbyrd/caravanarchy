@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -16,9 +17,50 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
 </head>
 
 <body>   
+    <div class="menu-btn">
+     <i class="fas fa-bars"></i>
+   </div>
+
+   <div class="side-bar">
+     <header>
+         <div class="close-btn">
+           <i class="fas fa-times"></i>
+         </div>
+         <img id="logo" src="img/logo1.png" alt="">
+              <p class="menuwords">Menus</p>
+     </header>
+     <div class="menu">
+       <div class="item"><a class="sub-btn">Ice Cream</a>
+           <div class="sub-menu">
+            <a href="chewsflavors.html" class="sub-item">Flavors</a>
+            <a href="chewstoppings.html" class="sub-item">Toppings</a>
+           <a href="chewsingredients.html" class="sub-item">Ingredients</a>
+           <a href="chewsabout.html" class="sub-item">About</a>
+           </div>
+         </div>
+       <div class="item">
+         <a class="sub-btn">Pizza</a>
+            <div class="sub-menu">
+            <a href="chewstoppings1.html" class="sub-item">Toppings</a>
+           <a href="chewsaboutpizza.html" class="sub-item">About</a>
+           </div>
+       </div>
+       <div class="item"><a href="chewsgrill.html">Grill</a></div>
+       <div class="item">
+         <a class="sub-btn">About</a>
+         <div class="sub-menu">
+           <a href="chewsabout.html" class="sub-item">Ice Cream</a>
+           <a href="chewsaboutpizza.html" class="sub-item">Pizza</a>
+           <a href="0.1_StartHere.html" class="sub-item">Philosophy</a>
+         </div>
+       </div>
+     </div>
+   </div>
     <div class="title">
         <img id = "hibiscus" src="img/hibiscus1.png">
         <div class = "reggae-one-regular">Chew's Wisely</div>
@@ -80,7 +122,26 @@
          </div>
     </div>
     
+   <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
 
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
     
 </body>
     

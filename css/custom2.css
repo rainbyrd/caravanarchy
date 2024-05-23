@@ -588,6 +588,15 @@ h4 {
 	border: 1px solid white;
 }
 
+.side_header {
+	font-size: 3.5vw;
+	text-align: center;
+	margin: 0;
+	margin-left: -5px;
+	font-family: caudex;
+	color: white;
+}
+
 p {
 	margin: 10px 0;
 	color: black;

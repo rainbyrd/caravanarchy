@@ -13,26 +13,41 @@ body {
 	padding: 0px 10px;
 }
 
-a {
-	text-decoration: none;
-	color: white;
-}
-
 h1 {
-	font-size: 10vw;
+	font-size: 5vw;
 	text-align: center;
 	margin: 0;
+	margin-top: 20px;
 	margin-left: -5px;
 	font-family: 'Averia Serif Libre';
 	color: white;
 }
 
 h2 {
-	font-size: 5vw;
-	color: white;	
-	margin: 5px;
-	margin-top: 30px;
+	font-size: 3.5vw;
+	margin: 0;
+	margin-top: 15px;
+	margin-left: 30px;
 	font-family: caudex;
+	color: white;	
+}
+
+h3 {
+	font-size: 2.5vw;
+	margin: 0;
+	margin-top: 10px;
+	margin-left: 60px;
+	font-family: caudex;
+	color: white;	
+}
+
+h4 {
+	font-size: 1.5vw;
+	padding: 0;
+	margin: 3px;
+	margin-left: 100px;
+	font-family: caudex;
+	color: white;
 }
 
 .side_header {
@@ -43,35 +58,11 @@ h2 {
 	font-family: caudex;
 	color: white;
 }
-h3 {
-	font-size: 3.5vw;
-	text-align: center;
-	margin: 0;
-	margin-left: -5px;
-	font-family: caudex;
-	color: white;	
-}
-h4 {
-	font-size: 4vw;
-	padding: 0;
-	margin: 5px;
-	font-family: caudex;
-	text-align: center;
-	color: white;
-}
 
-
-h5 {
-	font-size: 3vw;
-	padding: 0;
-	margin: 5px;
-	font-family: caudex;
-	color: white;	
-}
-
-h6 {
-	margin: 6px;
-	margin-left: 40px;
+.bodytext {
+	width: 75vw;
+	margin-left: 22vw;
+	overflow: scroll;
 }
 
 #logo {
@@ -221,12 +212,6 @@ h6 {
 	height: 100vh;
 	margin-left: 19vw;
 	padding: 0;
-}
-
-.bodytext {
-	width: 75vw;
-	margin-left: 22vw;
-	overflow: scroll;
 }
 
 .sidenav {
