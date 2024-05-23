@@ -13,6 +13,12 @@ body {
 	padding: 0px 10px;
 }
 
+.caravanarchy {
+	position: absolute;
+	right: 63px;
+	top: 5px;
+}
+
 a {
 	text-decoration: none;
 	color: white;
@@ -380,7 +386,9 @@ body, .sidenav, .side {
 	}
 	
 	.bodytext {
-		margin-left: 5px;
+		margin-top: 40px;
+		margin-left: 2vw;
+		width: 96vw;
 	}
 	.logo {
 		margin-right: 20px;

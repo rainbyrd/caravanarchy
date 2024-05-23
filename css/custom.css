@@ -13,6 +13,12 @@ body {
 	padding: 0px 10px;
 }
 
+.caravanarchy {
+	position: absolute;
+	right: 63px;
+	top: 5px;
+}
+
 h1 {
 	font-size: 5vw;
 	text-align: center;
@@ -363,18 +369,27 @@ body, .sidenav, .side {
 	.sidenav {
 		display: none;
 	}
-	.pdf_mobile object{
-		display: block;
-		width: 100vw;
-		height: calc(100vh - 38px);
-		margin-top: 38px;
-		margin-left: 0;
-		margin-bottom: 0;
-		margin-right: 0;
+	.bodytext {
+		margin-top: 40px;
+		margin-left: 2vw;
+		width: 96vw;
 	}
-	.pdf object{
-		display: none;
-	}
+h1 {
+	font-size: 6vw;
+}
+
+h2 {
+	font-size: 5vw;
+}
+
+h3 {
+	font-size: 4vw;
+}
+
+h4 {
+	font-size: 3vw;
+}
+
 	.logo {
 		margin-right: 20px;
 	}
@@ -393,13 +408,6 @@ body, .sidenav, .side {
 	 .sidenav {
 		display: block;
 	}
-	 .pdf_mobile object{
-		width: 81vw;
-		height: 100vh;
-		margin-top:-1vw;
-		margin-left: 19vw;
-		padding: 0;
-	} 
 }
 
 @media (523px < width < 800px){
@@ -407,11 +415,8 @@ body, .sidenav, .side {
 	.sidenav {
 		padding: 5px;
 	} 
-	.pdf object{
-		display: none;
-	}
-	.pdf_mobile object{
-		display: block;
+	.bodytext {
+		margin-left: 22vw;
 	}
 	.dropdown-container a, .dropdown-container-open a{
 	  font-size: 14px;
