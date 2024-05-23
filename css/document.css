@@ -391,6 +391,9 @@ body, .sidenav, .side {
 		width: 96vw;
 	}
 	
+	.warning {
+		background-color: #5a0000;
+	}
 	h1 {
 		font-size: 8vw;
 	}
