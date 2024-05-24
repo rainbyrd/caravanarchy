@@ -417,6 +417,7 @@ h4 {
 	} 
 	.bodytext {
 		margin-left: 22vw;
+		width: 74vw;
 	}
 	.dropdown-container a, .dropdown-container-open a{
 	  font-size: 14px;

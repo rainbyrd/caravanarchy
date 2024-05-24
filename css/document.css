@@ -420,7 +420,7 @@ body, .sidenav, .side {
 	}
 }
 
-@media (523px < width < 800px){
+@media (523px < width < 900px){
 
 	.sidenav {
 		padding: 5px;
