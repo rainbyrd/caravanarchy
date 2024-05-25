@@ -170,55 +170,7 @@
 
 
 		<script>
-			/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-
-			const box1 = document.querySelector('#box1');
-			const box2 = document.querySelector('#box2');
-			const box3 = document.querySelector('#box3');
-            const option1 = document.querySelector('#bodybox3');
-            const option2 = document.querySelector('#bodybox4');
-            const option3 = document.querySelector('#bodybox5');
-			const selectBox1Btn = document.querySelector('#select-box1');
-			const selectBox2Btn = document.querySelector('#select-box2');
-			const selectBox3Btn = document.querySelector('#select-box3');
-			
-			selectBox1Btn.addEventListener('click', () => {
-			box1.style.display = "block";
-			box2.style.display = "none";
-			box3.style.display = "none";
-            option1.style.background = "#5e9b1c";
-            option2.style.background = "#2f8ec1";
-            option3.style.background = "#1CCAD8";   
-//            option1.style.outline = "4px solid white;";
-//            option2.style.outline = "none;";
-//            option3.style.outline = "none;";
-            });
-
-			selectBox2Btn.addEventListener('click', () => {
-			box1.style.display = "none";
-			box2.style.display = "block";
-			box3.style.display = "none";
-            option1.style.background = "#97DB4F";
-            option2.style.background = "#126693";
-            option3.style.background = "#1CCAD8";
-//            option2.style.outline = "4px solid white;";
-//            option1.style.outline = "none;";
-//            option3.style.outline = "none;";
-			});
-			
-			selectBox3Btn.addEventListener('click', () => {
-			box1.style.display = "none";
-			box2.style.display = "none";
-			box3.style.display = "block";
-            option1.style.background = "#97DB4F";
-            option3.style.background = "#1d929b";
-            option2.style.background = "#2f8ec1";
-//            option3.style.outline = "4px solid white;";
-//            option2.style.outline = "none;";
-//            option1.style.outline = "none;";
-			});
-			
-			window.onload=function(){
+						window.onload=function(){
 document.getElementById("acti").click();
 };
 	
@@ -274,7 +226,55 @@ function openNav() {
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
-}
+};
+			
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+
+const box1 = document.querySelector('#box1');
+const box2 = document.querySelector('#box2');
+const box3 = document.querySelector('#box3');
+const option1 = document.querySelector('#bodybox3');
+const option2 = document.querySelector('#bodybox4');
+const option3 = document.querySelector('#bodybox5');
+const selectBox1Btn = document.querySelector('#select-box1');
+const selectBox2Btn = document.querySelector('#select-box2');
+const selectBox3Btn = document.querySelector('#select-box3');
+
+selectBox1Btn.addEventListener('click', () => {
+box1.style.display = "block";
+box2.style.display = "none";
+box3.style.display = "none";
+option1.style.background = "#5e9b1c";
+option2.style.background = "#2f8ec1";
+option3.style.background = "#1CCAD8";   
+//            option1.style.outline = "4px solid white;";
+//            option2.style.outline = "none;";
+//            option3.style.outline = "none;";
+});
+
+selectBox2Btn.addEventListener('click', () => {
+box1.style.display = "none";
+box2.style.display = "block";
+box3.style.display = "none";
+option1.style.background = "#97DB4F";
+option2.style.background = "#126693";
+option3.style.background = "#1CCAD8";
+//            option2.style.outline = "4px solid white;";
+//            option1.style.outline = "none;";
+//            option3.style.outline = "none;";
+});
+
+selectBox3Btn.addEventListener('click', () => {
+box1.style.display = "none";
+box2.style.display = "none";
+box3.style.display = "block";
+option1.style.background = "#97DB4F";
+option3.style.background = "#1d929b";
+option2.style.background = "#2f8ec1";
+//            option3.style.outline = "4px solid white;";
+//            option2.style.outline = "none;";
+//            option1.style.outline = "none;";
+});
 		</script>
 
 	</body>

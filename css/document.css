@@ -20,7 +20,7 @@ body {
 }
 
 .warning {
-		background-color: #5a0000;
+	background-color: #5a0000;
 	}
 
 a {
@@ -53,6 +53,7 @@ h2 {
 	font-family: caudex;
 	color: white;
 }
+
 h3 {
 	font-size: 3.5vw;
 	text-align: center;
