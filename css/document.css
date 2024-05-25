@@ -295,13 +295,23 @@ body, .sidenav, .side {
 	font-size: 1.5vw;
 	padding: 3px;
 	max-width: calc(20vw - 26px);
-	color: #dddddd;
+	color: #b5b5b5;
+}
+
+.dropdown-container a:hover {
+	background-color: black;
+	outline: 1px solid white;
+}
+
+.thispage {
+	background-color: black;
+	outline: 1px solid white;
+	color: white;
+	padding: 3px;
 }
 
 .sidenav a:hover, .dropdown-btn:hover {
 	color: #f1f1f1;
-	background-color: black;
-	outline: 1px solid white;
 }
 
 .sidenav a:hover {
